@@ -1,0 +1,117 @@
++ module load cuda/11.2
++ _module_raw load cuda/11.2
++ export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++ LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+++ conda info --base
++ source /usr/local/apps/miniconda20240526/etc/profile.d/conda.sh
+++ export CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++ CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
+++ CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
+++ '[' -z x ']'
++ conda activate /share/csc591s25/conda_env/new_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /share/csc591s25/conda_env/new_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate /share/csc591s25/conda_env/new_env
+++ /usr/local/apps/miniconda20240526/bin/conda shell.posix activate /share/csc591s25/conda_env/new_env
++ ask_conda='PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\'''
++ eval 'PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\'''
+++ PS1='(/share/csc591s25/conda_env/new_env) '
+++ export PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export 'CONDA_PROMPT_MODIFIER=(/share/csc591s25/conda_env/new_env) '
+++ CONDA_PROMPT_MODIFIER='(/share/csc591s25/conda_env/new_env) '
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /share/csc591s25/models/MLP
++ python3 -m cache_replacement.policy_learning.cache_model.main --experiment_base_dir=/share/csc591s25/tliu33/tmp --experiment_name=mlp_explore_neu128_lay1_actReLU_drop0.2_pruntrue --cache_configs=cache_replacement/policy_learning/cache/configs/default.json --model_bindings=lstm_hidden_size=128 --model_bindings=num_layers=1
+2025-02-15 01:13:07.318002: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-15 01:13:07.361178: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739599987.382315  799982 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739599987.388075  799982 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-15 01:13:07.407769: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0215 01:14:32.167821 22427125286720 main.py:395] Seed: 0
+I0215 01:14:32.186570 22427125286720 utils.py:24] Experiment directory: /share/csc591s25/tliu33/tmp/mlp_explore_neu128_lay1_actReLU_drop0.2_pruntrue
+I0215 01:14:32.191334 22427125286720 main.py:428] Model config: {
+    "address_embedder": {
+        "embed_dim": 64,
+        "max_vocab_size": 10000,
+        "type": "dynamic-vocab"
+    },
+    "cache_line_embedder": "address_embedder",
+    "cache_pc_embedder": "none",
+    "loss": [
+        "log_likelihood"
+    ],
+    "lr": 0.001,
+    "lstm_hidden_size": 128,
+    "max_attention_history": 30,
+    "num_layers": 1,
+    "pc_embedder": {
+        "embed_dim": 64,
+        "max_vocab_size": 5000,
+        "type": "dynamic-vocab"
+    },
+    "positional_embedder": {
+        "embed_dim": 128,
+        "type": "positional"
+    },
+    "sequence_length": 80
+}
+I0215 01:14:32.192901 22427125286720 main.py:434] Cache config: {
+    "associativity": 16,
+    "cache_line_size": 64,
+    "capacity": 2097152
+}
+I0215 01:14:32.194043 22427125286720 main.py:440] DAgger config: {
+    "final": 1.0,
+    "initial": 0.0,
+    "num_steps": 200000,
+    "type": "linear",
+    "update_freq": 10000
+}
+/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/__init__.py:1144: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:432.)
+  _C._set_default_tensor_type(t)
+I0215 01:14:32.197433 22427125286720 main.py:450] Device: cuda:0
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache_model/main.py", line 569, in <module>
+    app.run(main)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache_model/main.py", line 457, in main
+    oracle_valid_data, hit_rates = next(measure_cache_hit_rate(
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache_model/main.py", line 302, in measure_cache_hit_rate
+    with memtrace.MemoryTrace(memtrace_path, cache_line_size=line_size) as trace:
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache/memtrace.py", line 118, in __enter__
+    self._file = open(self._filename, "r")
+FileNotFoundError: [Errno 2] No such file or directory: 'cache_replacement/policy_learning/cache/traces/omnetpp_valid.csv'
++ '--model_bindings=activation=\ReLU\'
+/home/tliu33/.lsbatch/1739599800.872156.shell: line 29: --model_bindings=activation=\ReLU\: command not found
++ --model_bindings=dropout=0.2 --model_bindings=pruning=true --train_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_train.csv --valid_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv
+/home/tliu33/.lsbatch/1739599800.872156.shell: line 31: --model_bindings=dropout=0.2: command not found

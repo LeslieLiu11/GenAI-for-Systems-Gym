@@ -1,0 +1,24 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu03>
+Subject: Job 860597: <mlp_explore_neu128_lay2_actsigmoid_drop0.0_prunfalse> in cluster <Hazel> Exited
+
+Job <mlp_explore_neu128_lay2_actsigmoid_drop0.0_prunfalse> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Fri Feb 14 15:50:39 2025
+Job was executed on host(s) <gpu03>, in queue <gpu>, as user <tliu33> in cluster <Hazel> at Fri Feb 14 15:51:55 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/models/MLP> was used as the working directory.
+Started at Fri Feb 14 15:51:55 2025
+Terminated at Fri Feb 14 15:51:55 2025
+Results reported at Fri Feb 14 15:51:55 2025
+Cannot open your job file: /home/tliu33/.lsbatch/1739566239.860597
+Exited.
+
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <train_explore.err.860597> for stderr output of this job.
+

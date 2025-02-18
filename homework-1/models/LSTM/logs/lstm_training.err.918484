@@ -1,0 +1,704 @@
++ module load PrgEnv-pgi
++ _module_raw load PrgEnv-pgi
++ module load cuda/11.2
++ _module_raw load cuda/11.2
++ export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++ LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++ source /home/tliu33/.bashrc
+++ '[' -f /etc/bashrc ']'
+++ . /etc/bashrc
++++ '[' -z '' ']'
++++ BASHRCSOURCED=Y
++++ '[' '' ']'
++++ shopt -q login_shell
+++++ umask
++++ '[' 0022 -eq 0 ']'
++++ SHELL=/bin/bash
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/bash_completion.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/bash_completion.sh
+++++ '[' 'x5.1.8(1)-release' '!=' x -a x '!=' x -a x = x ']'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorgrep.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorgrep.sh
+++++ /usr/libexec/grepconf.sh -c
+++++ alias 'grep=grep --color=auto'
+++++ alias 'egrep=egrep --color=auto'
+++++ alias 'fgrep=fgrep --color=auto'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorls.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorls.sh
+++++ '[' '!' -t 0 ']'
+++++ return
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorsysstat.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorsysstat.sh
+++++ export S_COLORS=auto
+++++ S_COLORS=auto
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorxzgrep.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorxzgrep.sh
+++++ /usr/libexec/grepconf.sh -c
+++++ alias 'xzgrep=xzgrep --color=auto'
+++++ alias 'xzegrep=xzegrep --color=auto'
+++++ alias 'xzfgrep=xzfgrep --color=auto'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/colorzgrep.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/colorzgrep.sh
+++++ '[' -f /usr/libexec/grepconf.sh ']'
+++++ /usr/libexec/grepconf.sh -c
+++++ alias 'zgrep=zgrep --color=auto'
+++++ alias 'zfgrep=zfgrep --color=auto'
+++++ alias 'zegrep=zegrep --color=auto'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/debuginfod.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/debuginfod.sh
+++++ '[' -z '' ']'
+++++ prefix=/usr
++++++ cat /dev/null '/etc/debuginfod/*.urls'
++++++ tr '\n' ' '
+++++ DEBUGINFOD_URLS=
+++++ '[' -n '' ']'
+++++ unset DEBUGINFOD_URLS
+++++ unset prefix
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/flatpak.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/flatpak.sh
+++++ command -v flatpak
++++++ unset G_MESSAGES_DEBUG
++++++ echo /home/tliu33/.local/share/flatpak
++++++ GIO_USE_VFS=local
++++++ flatpak --installations
++++++ new_dirs=
++++++ read -r install_path
++++++ share_path=/home/tliu33/.local/share/flatpak/exports/share
++++++ case ":$XDG_DATA_DIRS:" in
++++++ :
++++++ read -r install_path
++++++ share_path=/var/lib/flatpak/exports/share
++++++ case ":$XDG_DATA_DIRS:" in
++++++ :
++++++ read -r install_path
++++++ echo ''
+++++ new_dirs=
+++++ export XDG_DATA_DIRS
+++++ XDG_DATA_DIRS=/home/tliu33/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/gawk.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/gawk.sh
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/gpfs.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/gpfs.sh
+++++ export PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++++ PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/hpc.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/hpc.sh
++++++ id -gn
+++++ export GROUP=csc591s25
+++++ GROUP=csc591s25
+++++ export OMP_NUM_THREADS=1
+++++ OMP_NUM_THREADS=1
+++++ source /usr/local/lsf/conf/profile.lsf
++++++ LSF_VERSION=10.1
++++++ LSF_TOP=/usr/local/lsf
++++++ _CUR_PATH_ENV=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
++++++ PATH=/usr/bin:/bin:/usr/local/bin:/local/bin:/sbin:/usr/sbin:/usr/ucb:/usr/sbin:/usr/bsd:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++++++ echo -n
++++++ '[' '' = -n ']'
++++++ enf=-n
++++++ enl=
++++++ export enf enl
++++++ LSNULFILE=/dev/null
++++++ AWK=
++++++ for tmp in nawk /usr/toolbox/nawk gawk awk
++++++ for tmp in nawk /usr/toolbox/nawk gawk awk
++++++ for tmp in nawk /usr/toolbox/nawk gawk awk
++++++ AWK=gawk
++++++ break
++++++ test gawk = ''
++++++ export AWK
+++++++ uname -a
++++++ uname_val='Linux gpu12 5.14.0-284.11.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Apr 12 10:45:03 EDT 2023 x86_64 x86_64 x86_64 GNU/Linux'
++++++ LSF_BINARY_TYPE=fail
++++++ BINARY_TYPE_HPC=
++++++ export LSF_BINARY_TYPE BINARY_TYPE_HPC
+++++++ echo Linux gpu12 5.14.0-284.11.1.el9_2.x86_64 '#1' SMP PREEMPT_DYNAMIC Wed Apr 12 10:45:03 EDT 2023 x86_64 x86_64 x86_64 GNU/Linux
+++++++ gawk '{print $1}'
++++++ field1=Linux
++++++ case "$field1" in
+++++++ echo Linux gpu12 5.14.0-284.11.1.el9_2.x86_64 '#1' SMP PREEMPT_DYNAMIC Wed Apr 12 10:45:03 EDT 2023 x86_64 x86_64 x86_64 GNU/Linux
+++++++ gawk '{split($3, a, "."); print a[1]}'
++++++ version=5
+++++++ uname -m
++++++ _machine=x86_64
+++++++ ldconfig -p
+++++++ grep -F libc.so.6
+++++++ sed 's/.*=>//'
+++++++ grep -v power9
++++++ for glibc in `ldconfig -p | grep -F libc.so.6 | grep -v power9 | sed 's/.*=>//'`
++++++ '[' -x /lib64/libc.so.6 ']'
++++++ /lib64/libc.so.6
++++++ '[' 0 '!=' 0 ']'
+++++++ /lib64/libc.so.6
+++++++ grep 'GNU C Library'
+++++++ gawk '{print substr($0,match($0,/version/))}'
+++++++ gawk '{print $2}'
+++++++ gawk -F. '{print $2}'
+++++++ sed s/,//
++++++ _libcver=34
++++++ '[' 34 '!=' '' ']'
++++++ break
++++++ '[' 34 = '' ']'
++++++ '[' 5 = 1 ']'
++++++ '[' 5 = 2 -o 5 -gt 2 ']'
+++++++ echo Linux gpu12 5.14.0-284.11.1.el9_2.x86_64 '#1' SMP PREEMPT_DYNAMIC Wed Apr 12 10:45:03 EDT 2023 x86_64 x86_64 x86_64 GNU/Linux
+++++++ gawk '{split($3, a, "."); print a[1]"."a[2]}'
++++++ subver=5.14
++++++ '[' 5.14 = 2.0 ']'
++++++ '[' 5.14 = 2.2 ']'
++++++ '[' 5.14 = 2.4 ']'
++++++ '[' 5.14 = 2.6 -o 5 -gt 2 ']'
++++++ LSF_BINARY_TYPE=fail
++++++ case "$_machine" in
++++++ '[' 34 = 1 ']'
++++++ '[' 34 = 2 ']'
++++++ '[' 34 = 3 ']'
++++++ '[' 34 -ge 4 -a 34 -lt 17 ']'
++++++ '[' 34 -ge 17 -a -d /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64 ']'
++++++ LSF_BINARY_TYPE=linux3.10-glibc2.17-x86_64
++++++ is_craylinux_host
++++++ '[' -f /opt/cray/rca/default/bin/rca-helper -a -f /etc/opt/cray/sdb/node_classes ']'
++++++ '[' -f /etc/node_classes ']'
++++++ role=unknown
++++++ '[' unknown = login -o unknown = service ']'
++++++ '[' -f /etc/opt/cray/release/cle-release ']'
++++++ return 1
++++++ '[' 1 = 0 ']'
++++++ is_bproc_host
++++++ '[' -f /usr/lib/libbproc.so ']'
++++++ return 1
++++++ '[' 1 = 0 ']'
++++++ is_slurm_host
++++++ _slurm_signature_file=/var/lsf/lsfslurm
++++++ '[' -f /var/lsf/lsfslurm ']'
++++++ return 1
++++++ '[' 1 = 0 ']'
++++++ is_rms_host
++++++ RMSQUERY=rmsquery
++++++ which rmsquery
++++++ '[' 1 = 0 ']'
++++++ return 1
++++++ '[' 1 = 0 ']'
++++++ '[' linux3.10-glibc2.17-x86_64 = fail ']'
++++++ '[' '' '!=' '' ']'
++++++ '[' linux3.10-glibc2.17-x86_64 '!=' trix6 -a linux3.10-glibc2.17-x86_64 '!=' trix6.5.8 -a linux3.10-glibc2.17-x86_64 '!=' trix6.5.24 ']'
++++++ LSF_SERVERDIR=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc
++++++ LSF_BINDIR=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin
++++++ LSF_LIBDIR=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++++++ env
++++++ grep LD_LIBRARY_PATH=
++++++ '[' 0 -ne 0 ']'
++++++ '[' /usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib = NULL ']'
++++++ echo /usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++++++ grep /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++++++ '[' 0 -ne 0 ']'
++++++ '[' linux3.10-glibc2.17-x86_64 = macosx ']'
++++++ '[' linux3.10-glibc2.17-x86_64 = x86-64-sol10 ']'
++++++ export LD_LIBRARY_PATH
++++++ export DYLD_LIBRARY_PATH
++++++ '[' linux3.10-glibc2.17-x86_64 = aix-64 ']'
++++++ XLSF_UIDDIR=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib/uid
++++++ LSF_ENVDIR=/usr/local/lsf/conf
++++++ _CUR_PATH_ENV=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
++++++ echo /usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
++++++ grep /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin
++++++ '[' 0 -ne 0 ']'
+++++++ echo /usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
+++++++ sed -e s=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:==
++++++ STRIPPATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
++++++ PATH=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
++++++ echo /usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
++++++ grep /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc
++++++ '[' 0 -ne 0 ']'
+++++++ echo /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
+++++++ sed -e s=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:==
++++++ STRIPPATH=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
++++++ PATH=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
+++++++ echo /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin:
+++++++ sed -e 's/:$//g'
++++++ PATH=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
++++++ '[' -z /usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/18.4/man:/usr/share/man:/usr/local/lsf/10.1/man: ']'
++++++ echo /usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/18.4/man:/usr/share/man:/usr/local/lsf/10.1/man:
++++++ grep /usr/local/lsf/10.1/man
++++++ '[' 0 -ne 0 ']'
++++++ '[' -d /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib/uid ']'
++++++ export LSF_SERVERDIR LSF_BINDIR LSF_LIBDIR LSF_ENVDIR PATH MANPATH
++++++ unset LSF_VERSION LSF_BINARY_TYPE enf enl AWK
++++++ _lsf_conf=/usr/local/lsf/conf/lsf.conf
++++++ '[' '!' -f /usr/local/lsf/conf/lsf.conf ']'
++++++ '[' -f /usr/local/lsf/conf/lsf.conf ']'
+++++++ grep '^[ 	]*LSF_ENABLE_EGO=' /usr/local/lsf/conf/lsf.conf
+++++++ sed '2,$ d'
+++++++ sed 's/^.*=//g'
+++++++ sed 's/"//g'
++++++ _lsf_enable_ego=N
++++++ '[' N '!=' N -a N '!=' n ']'
++++++ unset LSF_TOP
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/lang.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/lang.sh
+++++ unset LANG_backup
++++++ /usr/bin/locale
+++++ '[' -n '' ']'
+++++ LANG_backup=en_US.UTF-8
+++++ for config in /etc/locale.conf "${HOME}/.i18n"
+++++ '[' -f /etc/locale.conf ']'
+++++ '[' -x /usr/bin/sed ']'
++++++ /usr/bin/sed -r -e 's/^[[:blank:]]*([[:upper:]_]+)=([[:print:][:digit:]\._-]+|"[[:print:][:digit:]\._-]+")/export \1=\2/;t;d' /etc/locale.conf
+++++ eval export 'LANG="en_US.UTF-8"'
++++++ export LANG=en_US.UTF-8
++++++ LANG=en_US.UTF-8
+++++ for config in /etc/locale.conf "${HOME}/.i18n"
+++++ '[' -f /home/tliu33/.i18n ']'
+++++ '[' -n en_US.UTF-8 ']'
+++++ LANG=en_US.UTF-8
+++++ unset LANG_backup config
+++++ '[' -n '' ']'
+++++ '[' -n en_US.UTF-8 ']'
+++++ '[' dumb = linux ']'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/less.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/less.sh
+++++ '[' -z '||/usr/bin/lesspipe.sh %s' ']'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/mc.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/mc.sh
+++++ '[' -n '5.1.8(1)-release' ']'
+++++ alias 'mc=. /usr/libexec/mc/mc-wrapper.sh'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/modules.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/modules.sh
+++++ '[' -n /bin/bash ']'
+++++ '[' bash = sh ']'
+++++ shell=bash
+++++ '[' -f /usr/share/Modules/init/bash ']'
+++++ . /usr/share/Modules/init/bash
++++++ unset _mlshdbg
++++++ '[' 0 = 1 ']'
++++++ export 'MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD'
++++++ MODULES_RUN_QUARANTINE='LD_LIBRARY_PATH LD_PRELOAD'
++++++ unset _mlre _mlIFS
++++++ '[' -n x ']'
++++++ _mlIFS=' 	
+'
++++++ IFS=' '
++++++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++++++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++++++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++++++ echo x
++++++ '[' -n x ']'
+++++++ eval 'echo ${LD_LIBRARY_PATH}'
++++++++ echo /usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++++++ _mlre='__MODULES_QUAR_LD_LIBRARY_PATH='\''/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib'\'' '
++++++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++++++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++++++ echo
++++++ _mlre='__MODULES_QUAR_LD_LIBRARY_PATH='\''/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++++++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++++++ '[' LD_PRELOAD = LD_PRELOAD -a LD_PRELOAD = LD_PRELOAD ']'
+++++++ eval 'echo ${LD_PRELOAD+x}'
++++++++ echo
++++++ '[' -n '' ']'
++++++ _mlrv=MODULES_RUNENV_LD_PRELOAD
+++++++ eval 'echo ${MODULES_RUNENV_LD_PRELOAD:-}'
++++++++ echo
++++++ _mlre='__MODULES_QUAR_LD_LIBRARY_PATH='\''/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib'\'' LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' '
++++++ '[' -n '__MODULES_QUAR_LD_LIBRARY_PATH='\''/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib'\'' LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' ' ']'
++++++ _mlre='eval __MODULES_QUAR_LD_LIBRARY_PATH='\''/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib'\'' LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' __MODULES_QUARANTINE_SET=1 '
+++++++ eval '__MODULES_QUAR_LD_LIBRARY_PATH='\''/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib'\''' 'LD_LIBRARY_PATH='\'''\''' 'LD_PRELOAD='\'''\''' __MODULES_QUARANTINE_SET=1 /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash autoinit
++++++++ __MODULES_QUAR_LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++++++++ LD_LIBRARY_PATH=
++++++++ LD_PRELOAD=
++++++++ __MODULES_QUARANTINE_SET=1
++++++++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash autoinit
++++++ _mlcode='module() {
+   eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+   _mlstatus=$?;
+   return $_mlstatus;
+};
+ml() { module ml "$@"; };
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl; export MODULES_CMD;
+unset __MODULES_AUTOINIT_INPROGRESS;
+MODULESHOME=/usr/share/Modules; export MODULESHOME;
+test 0;'
++++++ _mlret=0
++++++ '[' -n x ']'
++++++ IFS=' 	
+'
++++++ unset _mlIFS
++++++ unset _mlre _mlv _mlrv
++++++ '[' 0 -eq 0 ']'
++++++ eval 'module() {
+   eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+   _mlstatus=$?;
+   return $_mlstatus;
+};
+ml() { module ml "$@"; };
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl; export MODULES_CMD;
+unset __MODULES_AUTOINIT_INPROGRESS;
+MODULESHOME=/usr/share/Modules; export MODULESHOME;
+test 0;'
+++++++ MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+++++++ export MODULES_CMD
+++++++ unset __MODULES_AUTOINIT_INPROGRESS
+++++++ MODULESHOME=/usr/share/Modules
+++++++ export MODULESHOME
+++++++ test 0
++++++ '[' -t 2 ']'
++++++ export -f module
+++++++ type -t ml
++++++ '[' function = function ']'
++++++ export -f ml
++++++ '[' 5 -ge 3 ']'
++++++ [[ hxB =~ i ]]
++++++ [[ ! :/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin: =~ :/usr/share/Modules/bin: ]]
++++++ '[' '!' -n x ']'
++++++ [[ ! :/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/18.4/man:/usr/share/man:/usr/local/lsf/10.1/man:: =~ :/usr/share/man: ]]
++++++ unset _mlcode _mlret
++++++ '[' -n '' ']'
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/scl-init.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/scl-init.sh
+++++++ /bin/ps -p 1288274 -ocomm=
++++++ /bin/basename 1739741107.9184
+++++ shell=1739741107.9184
+++++ '[' 1739741107.9184 = bash ']'
+++++ MODULESHOME=/usr/share/Modules
+++++ export MODULESHOME
+++++ '[' /etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/usr/local/pgi/modulefiles:/usr/local/apps/modulefiles:/opt/intel/modulefiles:/opt/intel/oneapi/modulefiles:/usr/local/apps/nvidia/modulefiles = '' ']'
+++++ MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/usr/local/pgi/modulefiles:/usr/local/apps/modulefiles:/opt/intel/modulefiles:/opt/intel/oneapi/modulefiles:/usr/local/apps/nvidia/modulefiles
+++++ export MODULEPATH
++++ for i in /etc/profile.d/*.sh
++++ '[' -r /etc/profile.d/which2.sh ']'
++++ '[' '' ']'
++++ . /etc/profile.d/which2.sh
+++++ case "$(basename $(readlink /proc/$$/exe))" in
+++++++ readlink /proc/1288274/exe
++++++ basename /usr/bin/bash
+++++ which_declare='declare -f'
+++++ which_opt=-f
+++++ export which_declare
+++++ export -f which
++++ unset i
++++ unset -f pathmunge
+++ [[ /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin =~ /home/tliu33/\.local/bin:/home/tliu33/bin: ]]
+++ export PATH
+++ '[' -d /home/tliu33/.bashrc.d ']'
+++ unset rc
++++ /usr/local/apps/miniconda20240526/bin/conda shell.bash hook
+++ __conda_setup='export CONDA_EXE='\''/usr/local/apps/miniconda20240526/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/usr/local/apps/miniconda20240526/bin/python'\''
+
+# Copyright (C) 2012 Anaconda, Inc
+# SPDX-License-Identifier: BSD-3-Clause
+__conda_exe() (
+    "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"
+)
+
+__conda_hashr() {
+    if [ -n "${ZSH_VERSION:+x}" ]; then
+        \rehash
+    elif [ -n "${POSH_VERSION:+x}" ]; then
+        :  # pass
+    else
+        \hash -r
+    fi
+}
+
+__conda_activate() {
+    if [ -n "${CONDA_PS1_BACKUP:+x}" ]; then
+        # Handle transition from shell activated with conda <= 4.3 to a subsequent activation
+        # after conda updated to >= 4.4. See issue #6173.
+        PS1="$CONDA_PS1_BACKUP"
+        \unset CONDA_PS1_BACKUP
+    fi
+    \local ask_conda
+    ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix "$@")" || \return
+    \eval "$ask_conda"
+    __conda_hashr
+}
+
+__conda_reactivate() {
+    \local ask_conda
+    ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix reactivate)" || \return
+    \eval "$ask_conda"
+    __conda_hashr
+}
+
+conda() {
+    \local cmd="${1-__missing__}"
+    case "$cmd" in
+        activate|deactivate)
+            __conda_activate "$@"
+            ;;
+        install|update|upgrade|remove|uninstall)
+            __conda_exe "$@" || \return
+            __conda_reactivate
+            ;;
+        *)
+            __conda_exe "$@"
+            ;;
+    esac
+}
+
+if [ -z "${CONDA_SHLVL+x}" ]; then
+    \export CONDA_SHLVL=0
+    # In dev-mode CONDA_EXE is python.exe and on Windows
+    # it is in a different relative location to condabin.
+    if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then
+        PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}"
+    else
+        PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}"
+    fi
+    \export PATH
+
+    # We'\''re not allowing PS1 to be unbound. It must at least be set.
+    # However, we'\''re not exporting it, which can cause problems when starting a second shell
+    # via a first shell (i.e. starting zsh from bash).
+    if [ -z "${PS1+x}" ]; then
+        PS1=
+    fi
+fi
+
+conda activate base'
+++ '[' 0 -eq 0 ']'
+++ eval 'export CONDA_EXE='\''/usr/local/apps/miniconda20240526/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/usr/local/apps/miniconda20240526/bin/python'\''
+
+# Copyright (C) 2012 Anaconda, Inc
+# SPDX-License-Identifier: BSD-3-Clause
+__conda_exe() (
+    "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"
+)
+
+__conda_hashr() {
+    if [ -n "${ZSH_VERSION:+x}" ]; then
+        \rehash
+    elif [ -n "${POSH_VERSION:+x}" ]; then
+        :  # pass
+    else
+        \hash -r
+    fi
+}
+
+__conda_activate() {
+    if [ -n "${CONDA_PS1_BACKUP:+x}" ]; then
+        # Handle transition from shell activated with conda <= 4.3 to a subsequent activation
+        # after conda updated to >= 4.4. See issue #6173.
+        PS1="$CONDA_PS1_BACKUP"
+        \unset CONDA_PS1_BACKUP
+    fi
+    \local ask_conda
+    ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix "$@")" || \return
+    \eval "$ask_conda"
+    __conda_hashr
+}
+
+__conda_reactivate() {
+    \local ask_conda
+    ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix reactivate)" || \return
+    \eval "$ask_conda"
+    __conda_hashr
+}
+
+conda() {
+    \local cmd="${1-__missing__}"
+    case "$cmd" in
+        activate|deactivate)
+            __conda_activate "$@"
+            ;;
+        install|update|upgrade|remove|uninstall)
+            __conda_exe "$@" || \return
+            __conda_reactivate
+            ;;
+        *)
+            __conda_exe "$@"
+            ;;
+    esac
+}
+
+if [ -z "${CONDA_SHLVL+x}" ]; then
+    \export CONDA_SHLVL=0
+    # In dev-mode CONDA_EXE is python.exe and on Windows
+    # it is in a different relative location to condabin.
+    if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then
+        PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}"
+    else
+        PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}"
+    fi
+    \export PATH
+
+    # We'\''re not allowing PS1 to be unbound. It must at least be set.
+    # However, we'\''re not exporting it, which can cause problems when starting a second shell
+    # via a first shell (i.e. starting zsh from bash).
+    if [ -z "${PS1+x}" ]; then
+        PS1=
+    fi
+fi
+
+conda activate base'
++++ export CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
++++ CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
++++ CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
++++ '[' -z x ']'
++++ conda activate base
++++ local cmd=activate
++++ case "$cmd" in
++++ __conda_activate activate base
++++ '[' -n '' ']'
++++ local ask_conda
+++++ PS1=
+++++ __conda_exe shell.posix activate base
+++++ /usr/local/apps/miniconda20240526/bin/conda shell.posix activate base
++++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/apps/miniconda20240526/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin'\''
+export CONDA_PREFIX='\''/usr/local/apps/miniconda20240526'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/share/csc591s25/conda_env/new_env'\''
+export CONDA_EXE='\''/usr/local/apps/miniconda20240526/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/usr/local/apps/miniconda20240526/bin/python'\'''
++++ eval 'PS1='\''(base) '\''
+export PATH='\''/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/apps/miniconda20240526/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin'\''
+export CONDA_PREFIX='\''/usr/local/apps/miniconda20240526'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/share/csc591s25/conda_env/new_env'\''
+export CONDA_EXE='\''/usr/local/apps/miniconda20240526/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/usr/local/apps/miniconda20240526/bin/python'\'''
+++++ PS1='(base) '
+++++ export PATH=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/apps/miniconda20240526/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++++ PATH=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/apps/miniconda20240526/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++++ export CONDA_PREFIX=/usr/local/apps/miniconda20240526
+++++ CONDA_PREFIX=/usr/local/apps/miniconda20240526
+++++ export CONDA_SHLVL=3
+++++ CONDA_SHLVL=3
+++++ export CONDA_DEFAULT_ENV=base
+++++ CONDA_DEFAULT_ENV=base
+++++ export 'CONDA_PROMPT_MODIFIER=(base) '
+++++ CONDA_PROMPT_MODIFIER='(base) '
+++++ export CONDA_PREFIX_2=/share/csc591s25/conda_env/new_env
+++++ CONDA_PREFIX_2=/share/csc591s25/conda_env/new_env
+++++ export CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++++ CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++++ export _CE_M=
+++++ _CE_M=
+++++ export _CE_CONDA=
+++++ _CE_CONDA=
+++++ export CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
+++++ CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
++++ __conda_hashr
++++ '[' -n '' ']'
++++ '[' -n '' ']'
++++ hash -r
+++ unset __conda_setup
++ conda activate /share/csc591s25/conda_env/new_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /share/csc591s25/conda_env/new_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate /share/csc591s25/conda_env/new_env
+++ /usr/local/apps/miniconda20240526/bin/conda shell.posix activate /share/csc591s25/conda_env/new_env
++ ask_conda='PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin'\''
+export CONDA_PREFIX='\''/share/csc591s25/conda_env/new_env'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''/share/csc591s25/conda_env/new_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\''
+export CONDA_PREFIX_3='\''/usr/local/apps/miniconda20240526'\''
+export CONDA_EXE='\''/usr/local/apps/miniconda20240526/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/usr/local/apps/miniconda20240526/bin/python'\'''
++ eval 'PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin'\''
+export CONDA_PREFIX='\''/share/csc591s25/conda_env/new_env'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''/share/csc591s25/conda_env/new_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\''
+export CONDA_PREFIX_3='\''/usr/local/apps/miniconda20240526'\''
+export CONDA_EXE='\''/usr/local/apps/miniconda20240526/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/usr/local/apps/miniconda20240526/bin/python'\'''
+++ PS1='(/share/csc591s25/conda_env/new_env) '
+++ export PATH=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++ PATH=/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++ export CONDA_PREFIX=/share/csc591s25/conda_env/new_env
+++ CONDA_PREFIX=/share/csc591s25/conda_env/new_env
+++ export CONDA_SHLVL=4
+++ CONDA_SHLVL=4
+++ export CONDA_DEFAULT_ENV=/share/csc591s25/conda_env/new_env
+++ CONDA_DEFAULT_ENV=/share/csc591s25/conda_env/new_env
+++ export 'CONDA_PROMPT_MODIFIER=(/share/csc591s25/conda_env/new_env) '
+++ CONDA_PROMPT_MODIFIER='(/share/csc591s25/conda_env/new_env) '
+++ export CONDA_PREFIX_3=/usr/local/apps/miniconda20240526
+++ CONDA_PREFIX_3=/usr/local/apps/miniconda20240526
+++ export CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++ CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
+++ CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ nvidia-smi
++ cd /share/csc591s25/models/LSTM
++ python3 -m cache_replacement.policy_learning.cache.main --experiment_base_dir=/share/csc591s25/tliu33/tmp/section5 --experiment_name=section5_llc_default --cache_configs=cache_replacement/policy_learning/cache/configs/default.json '--config_bindings=loss=["ndcg", "reuse_dist"]' --config_bindings=address_embedder.max_vocab_size=5000 --train_memtrace=cache_replacement/policy_learning/cache/traces/sample_trace.csv --valid_memtrace=cache_replacement/policy_learning/cache/traces/sample_trace.csv
+2025-02-16 16:25:36.583092: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-16 16:25:36.604039: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739741136.621373 1288399 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739741136.626310 1288399 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-16 16:25:36.643889: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+FATAL Flags parsing error: Unknown command line flag 'train_memtrace'
+Pass --helpshort or --helpfull to see help on flags.

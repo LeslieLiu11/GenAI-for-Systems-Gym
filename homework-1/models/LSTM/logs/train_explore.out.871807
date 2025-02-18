@@ -1,0 +1,88 @@
+++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash load cuda/11.2
++ eval 'LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib;' export 'LD_LIBRARY_PATH;' 'PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin;' export 'PATH;' 'CUDA_HOME=/usr/local/apps/cuda/cuda-11.2;' export 'CUDA_HOME;' '_LMFILES_=/usr/local/apps/modulefiles/cuda/11.2;' export '_LMFILES_;' 'LOADEDMODULES=cuda/11.2;' export 'LOADEDMODULES;' test '0;'
+++ LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+++ export LD_LIBRARY_PATH
+++ PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ export PATH
+++ CUDA_HOME=/usr/local/apps/cuda/cuda-11.2
+++ export CUDA_HOME
+++ _LMFILES_=/usr/local/apps/modulefiles/cuda/11.2
+++ export _LMFILES_
+++ LOADEDMODULES=cuda/11.2
+++ export LOADEDMODULES
+++ test 0
++ _mlstatus=0
++ return 0
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu03>
+Subject: Job 871807: <mlp_explore_neu64_lay1_actsigmoid_drop0.0_pruntrue> in cluster <Hazel> Exited
+
+Job <mlp_explore_neu64_lay1_actsigmoid_drop0.0_pruntrue> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Sat Feb 15 00:50:30 2025
+Job was executed on host(s) <gpu03>, in queue <gpu>, as user <tliu33> in cluster <Hazel> at Sat Feb 15 00:52:04 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/models/MLP> was used as the working directory.
+Started at Sat Feb 15 00:52:04 2025
+Terminated at Sat Feb 15 00:52:48 2025
+Results reported at Sat Feb 15 00:52:48 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 12:00
+#BSUB -q gpu
+#BSUB -gpu "num=1:mode=shared:mps=no"
+#BSUB -o train_explore.out.%J
+#BSUB -e train_explore.err.%J
+#BSUB -J mlp_explore_neu64_lay1_actsigmoid_drop0.0_pruntrue
+
+set -x
+
+module load cuda/11.2
+export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:$LD_LIBRARY_PATH
+
+source $(conda info --base)/etc/profile.d/conda.sh
+conda activate /share/csc591s25/conda_env/new_env
+
+cd /share/csc591s25/models/MLP
+
+python3 -m cache_replacement.policy_learning.cache_model.main \
+  --experiment_base_dir="/share/csc591s25/tliu33/tmp" \
+  --experiment_name="mlp_explore_neu64_lay1_actsigmoid_drop0.0_pruntrue" \
+  --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" \
+  --model_bindings="lstm_hidden_size=64" \
+  --model_bindings="num_layers=1" \
+  --model_bindings="activation=sigmoid" \
+  --model_bindings="dropout=0.0" \
+  --model_bindings="pruning=true" \
+  --train_memtrace="cache_replacement/policy_learning/cache/traces/astar_313B_train.csv" \
+  --valid_memtrace="cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv"
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   8.43 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   45 sec.
+    Turnaround time :                            138 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <train_explore.err.871807> for stderr output of this job.
+

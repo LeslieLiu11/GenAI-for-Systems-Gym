@@ -1,0 +1,24 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu02>
+Subject: Job 872313: <mlp_explore_neu128_lay2_actReLU_drop0.0_prunfalse> in cluster <Hazel> Exited
+
+Job <mlp_explore_neu128_lay2_actReLU_drop0.0_prunfalse> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Sat Feb 15 01:26:20 2025
+Job was executed on host(s) <gpu02>, in queue <gpu>, as user <tliu33> in cluster <Hazel> at Sat Feb 15 01:29:46 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/models/MLP> was used as the working directory.
+Started at Sat Feb 15 01:29:46 2025
+Terminated at Sat Feb 15 01:29:46 2025
+Results reported at Sat Feb 15 01:29:46 2025
+Cannot open your job file: /home/tliu33/.lsbatch/1739600780.872313
+Exited.
+
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <train_explore.err.872313> for stderr output of this job.
+

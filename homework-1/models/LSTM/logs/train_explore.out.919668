@@ -1,0 +1,95 @@
+Job <919669> is submitted to queue <gpu>.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu13>
+Subject: Job 919668: <${experiment_name}> in cluster <Hazel> Done
+
+Job <${experiment_name}> was submitted from host <login04> by user <tliu33> in cluster <Hazel> at Sun Feb 16 18:00:38 2025
+Job was executed on host(s) <gpu13>, in queue <gpu>, as user <tliu33> in cluster <Hazel> at Sun Feb 16 18:00:40 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/models/MLP> was used as the working directory.
+Started at Sun Feb 16 18:00:40 2025
+Terminated at Sun Feb 16 18:00:40 2025
+Results reported at Sun Feb 16 18:00:40 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# This script demonstrates how to explore multiple hyperparameters for MLP training.
+# Example hyperparams: neurons, layers, activation, dropout, pruning, etc.
+#
+# Usage: ./train_task6_explore.sh
+#
+# NOTE:
+#   1) We have fixed the quoting issue for activation and other string parameters.
+#   2) If your code does not support pruning or dropout, please remove or comment them out.
+
+# Arrays for each hyperparam you want to explore
+NEURONS_ARR=(128)
+LAYERS_ARR=(1)
+ACT_ARR=("ReLU")     # Activation functions
+DROPOUT_ARR=(0.2)          # If your code supports dropout
+PRUNING_ARR=("False")   # If your code supports pruning
+
+for neurons in "${NEURONS_ARR[@]}"; do
+  for layers in "${LAYERS_ARR[@]}"; do
+    for act in "${ACT_ARR[@]}"; do
+      for dropout in "${DROPOUT_ARR[@]}"; do
+        for pruning in "${PRUNING_ARR[@]}"; do
+
+          # Construct an experiment_name to differentiate runs
+          experiment_name="mlp_explore_neu${neurons}_lay${layers}_act${act}_drop${dropout}_prun${pruning}"
+
+          # Submit BSUB job
+          bsub <<EOF
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 12:00
+#BSUB -q gpu
+#BSUB -gpu "num=1:mode=shared:mps=no"
+#BSUB -o train_explore.out.%J
+#BSUB -e train_explore.err.%J
+#BSUB -J ${experiment_name}
+
+
+# Enable debug mode
+set -x
+
+# Load necessary modules (adjust versions as available on your system)
+module load PrgEnv-pgi              # Load PGI environment
+module load cuda/11.2               # For example, using CUDA 11.2
+export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:\$LD_LIBRARY_PATH
+
+# Initialize conda and activate the virtual environment
+source \$(conda info --base)/etc/profile.d/conda.sh
+conda activate /share/csc591s25/conda_env/new_env
+
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.16 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   29 sec.
+    Turnaround time :                            2 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <train_explore.err.919668> for stderr output of this job.
+

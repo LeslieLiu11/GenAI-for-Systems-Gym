@@ -1,0 +1,62 @@
++ module load PrgEnv-pgi
++ _module_raw load PrgEnv-pgi
++ module load cuda/11.2
++ _module_raw load cuda/11.2
++ export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++ LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+++ conda info --base
++ source /usr/local/apps/miniconda20240526/etc/profile.d/conda.sh
+++ export CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++ CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
+++ CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
+++ '[' -z x ']'
++ conda activate /share/csc591s25/conda_env/new_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /share/csc591s25/conda_env/new_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate /share/csc591s25/conda_env/new_env
+++ /usr/local/apps/miniconda20240526/bin/conda shell.posix activate /share/csc591s25/conda_env/new_env
++ ask_conda='PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\'''
++ eval 'PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\'''
+++ PS1='(/share/csc591s25/conda_env/new_env) '
+++ export PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export 'CONDA_PROMPT_MODIFIER=(/share/csc591s25/conda_env/new_env) '
+++ CONDA_PROMPT_MODIFIER='(/share/csc591s25/conda_env/new_env) '
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ nvidia-smi
++ cd /share/csc591s25/models/LSTM
++ python3 -m policy_learning.cache.main --experiment_base_dir=/share/csc591s25/tliu33/tmp --experiment_name=section5_LRU --cache_configs=policy_learning/cache/configs/default.json --cache_configs=policy_learning/cache/configs/eviction_policy/lru.json --memtrace_file=/share/csc591s25/traces/astar_313B_test.csv
+2025-02-16 13:42:57.678765: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739731377.780727 3993652 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739731377.787770 3993652 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-16 13:42:57.992749: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/models/LSTM/policy_learning/cache/main.py", line 39, in <module>
+    from cache_replacement.policy_learning.cache import cache as cache_mod
+ModuleNotFoundError: No module named 'cache_replacement'

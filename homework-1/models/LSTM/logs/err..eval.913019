@@ -1,0 +1,48 @@
+2025-02-16 13:50:14.722179: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-16 13:50:14.865318: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739731814.930321 1748526 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739731814.936005 1748526 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-16 13:50:15.025705: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-16 13:50:30.260522: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+I0216 13:50:30.260868 22949643482112 utils.py:24] Experiment directory: /share/csc591s25/tliu33/tmp/eval_explore/eval_mlp_explore_neu128_lay1_actReLU_drop0.2_prunFalse
+I0216 13:50:30.292963 22949643482112 main.py:107] Config: {
+    "associativity": 16,
+    "cache_line_size": 64,
+    "capacity": 2097152,
+    "eviction_policy": {
+        "policy_type": "greedy",
+        "scorer": {
+            "checkpoint": "/share/csc591s25/tliu33/tmp/explore/mlp_explore_neu128_lay1_actReLU_drop0.2_prunFalse/checkpoints/20000.ckpt",
+            "config_path": "/share/csc591s25/tliu33/tmp/explore/mlp_explore_neu128_lay1_actReLU_drop0.2_prunFalse/model_config.json",
+            "type": "learned"
+        }
+    }
+}
+I0216 13:50:30.293160 22949643482112 main.py:108] Flags: {
+    "memtrace_file": "cache_replacement/policy_learning/cache/traces/astar_313B_test.csv",
+    "tb_freq": 10000,
+    "warmup_period": 0
+}
+Initializing MemoryTrace:   0%|          | 0/10000000 [00:00<?, ?it/s]Initializing MemoryTrace:   1%|          | 56149/10000000 [00:00<00:17, 561457.07it/s]Initializing MemoryTrace:   1%|          | 118815/10000000 [00:00<00:16, 599796.84it/s]Initializing MemoryTrace:   4%|▎         | 352135/10000000 [00:00<00:06, 1391248.99it/s]Initializing MemoryTrace:   7%|▋         | 687747/10000000 [00:00<00:04, 2166891.86it/s]Initializing MemoryTrace:  10%|█         | 1027710/10000000 [00:00<00:03, 2611347.61it/s]Initializing MemoryTrace:  14%|█▎        | 1357400/10000000 [00:00<00:03, 2844370.47it/s]Initializing MemoryTrace:  16%|█▋        | 1644248/10000000 [00:00<00:02, 2852161.88it/s]Initializing MemoryTrace:  20%|██        | 2027300/10000000 [00:00<00:02, 3163543.32it/s]Initializing MemoryTrace:  24%|██▍       | 2417689/10000000 [00:00<00:02, 3394933.94it/s]Initializing MemoryTrace:  28%|██▊       | 2818530/10000000 [00:01<00:02, 3584161.59it/s]Initializing MemoryTrace:  32%|███▏      | 3217507/10000000 [00:01<00:01, 3708262.69it/s]Initializing MemoryTrace:  36%|███▌      | 3615209/10000000 [00:01<00:01, 3789787.95it/s]Initializing MemoryTrace:  40%|████      | 4025645/10000000 [00:01<00:01, 3885031.98it/s]Initializing MemoryTrace:  44%|████▍     | 4442912/10000000 [00:01<00:01, 3971874.24it/s]Initializing MemoryTrace:  49%|████▊     | 4862331/10000000 [00:01<00:01, 4038838.64it/s]Initializing MemoryTrace:  53%|█████▎    | 5282135/10000000 [00:01<00:01, 4086713.51it/s]Initializing MemoryTrace:  57%|█████▋    | 5700980/10000000 [00:01<00:01, 4117264.37it/s]Initializing MemoryTrace:  61%|██████    | 6112707/10000000 [00:01<00:00, 4100856.40it/s]Initializing MemoryTrace:  65%|██████▌   | 6529034/10000000 [00:01<00:00, 4119500.27it/s]Initializing MemoryTrace:  69%|██████▉   | 6943317/10000000 [00:02<00:00, 4126421.34it/s]Initializing MemoryTrace:  74%|███████▎  | 7364882/10000000 [00:02<00:00, 4153121.16it/s]Initializing MemoryTrace:  78%|███████▊  | 7789410/10000000 [00:02<00:00, 4180708.71it/s]Initializing MemoryTrace:  82%|████████▏ | 8207493/10000000 [00:02<00:00, 3361529.24it/s]Initializing MemoryTrace:  86%|████████▌ | 8618017/10000000 [00:02<00:00, 3552035.97it/s]Initializing MemoryTrace:  90%|█████████ | 9033037/10000000 [00:02<00:00, 3712264.81it/s]Initializing MemoryTrace:  95%|█████████▍| 9450359/10000000 [00:02<00:00, 3839818.70it/s]Initializing MemoryTrace:  99%|█████████▊| 9871958/10000000 [00:02<00:00, 3946375.67it/s]Initializing MemoryTrace: 100%|██████████| 10000000/10000000 [00:02<00:00, 3554155.46it/s]
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache/main.py", line 158, in <module>
+    app.run(main)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache/main.py", line 119, in main
+    cache = cache_mod.Cache.from_config(cache_config, trace=trace)
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 194, in from_config
+    eviction_policy = eviction_policy_from_config(
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 180, in eviction_policy_from_config
+    scorer = scorer_from_config(config.get("scorer"), trace)
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 171, in scorer_from_config
+    with open(config.get("config_path"), "r") as model_config:
+FileNotFoundError: [Errno 2] No such file or directory: '/share/csc591s25/tliu33/tmp/explore/mlp_explore_neu128_lay1_actReLU_drop0.2_prunFalse/model_config.json'

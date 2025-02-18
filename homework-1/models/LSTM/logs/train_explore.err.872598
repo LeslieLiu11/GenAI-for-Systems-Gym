@@ -1,0 +1,83 @@
++ module load PrgEnv-pgi
++ _module_raw load PrgEnv-pgi
++ module load cuda/11.2
++ _module_raw load cuda/11.2
++ export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
++ LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+++ conda info --base
++ source /usr/local/apps/miniconda20240526/etc/profile.d/conda.sh
+++ export CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++ CONDA_EXE=/usr/local/apps/miniconda20240526/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
+++ CONDA_PYTHON_EXE=/usr/local/apps/miniconda20240526/bin/python
+++ '[' -z x ']'
++ conda activate /share/csc591s25/conda_env/new_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /share/csc591s25/conda_env/new_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate /share/csc591s25/conda_env/new_env
+++ /usr/local/apps/miniconda20240526/bin/conda shell.posix activate /share/csc591s25/conda_env/new_env
++ ask_conda='PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\'''
++ eval 'PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\'''
+++ PS1='(/share/csc591s25/conda_env/new_env) '
+++ export PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export 'CONDA_PROMPT_MODIFIER=(/share/csc591s25/conda_env/new_env) '
+++ CONDA_PROMPT_MODIFIER='(/share/csc591s25/conda_env/new_env) '
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ nvidia-smi
++ cd /share/csc591s25/models/MLP
++ python3 -m cache_replacement.policy_learning.cache_model.main --experiment_base_dir=/share/csc591s25/tliu33/tmp --experiment_name=mlp_explore_neu128_lay1_actsigmoid_drop0.2_pruntrue --cache_configs=cache_replacement/policy_learning/cache/configs/default.json --model_bindings=lstm_hidden_size=128 --model_bindings=num_layers=1 --model_bindings=activation=sigmoid --model_bindings=dropout=0.2 --model_bindings=pruning=true --train_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_train.csv --valid_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv
+2025-02-15 01:47:37.029656: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-15 01:47:37.067448: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739602057.083146  490084 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739602057.088236  490084 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-15 01:47:37.105307: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0215 01:49:06.985806 22849292691264 main.py:395] Seed: 0
+I0215 01:49:07.027570 22849292691264 utils.py:24] Experiment directory: /share/csc591s25/tliu33/tmp/mlp_explore_neu128_lay1_actsigmoid_drop0.2_pruntrue
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache_model/main.py", line 569, in <module>
+    app.run(main)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/cache_model/main.py", line 426, in main
+    model_config = cfg.Config.from_files_and_bindings(
+  File "/gpfs_common/share01/csc591s25/models/MLP/cache_replacement/policy_learning/common/config.py", line 60, in from_files_and_bindings
+    merged_config.set(key, ast.literal_eval(value))
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/ast.py", line 107, in literal_eval
+    return _convert(node_or_string)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/ast.py", line 106, in _convert
+    return _convert_signed_num(node)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/ast.py", line 80, in _convert_signed_num
+    return _convert_num(node)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/ast.py", line 71, in _convert_num
+    _raise_malformed_node(node)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/ast.py", line 68, in _raise_malformed_node
+    raise ValueError(f'malformed node or string: {node!r}')
+ValueError: malformed node or string: <ast.Name object at 0x14c6ea2b0490>

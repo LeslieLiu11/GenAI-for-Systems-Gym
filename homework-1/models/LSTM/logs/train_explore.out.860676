@@ -1,0 +1,52 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu04>
+Subject: Job 860676: <mlp_explore_neu128_lay1_actsigmoid_drop0.2_pruntrue> in cluster <Hazel> Exited
+
+Job <mlp_explore_neu128_lay1_actsigmoid_drop0.2_pruntrue> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Fri Feb 14 15:54:52 2025
+Job was executed on host(s) <gpu04>, in queue <gpu>, as user <tliu33> in cluster <Hazel> at Fri Feb 14 15:55:28 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/models/MLP> was used as the working directory.
+Started at Fri Feb 14 15:55:28 2025
+Terminated at Fri Feb 14 15:55:28 2025
+Results reported at Fri Feb 14 15:55:28 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 12:00
+#BSUB -q gpu
+#BSUB -gpu "num=1:mode=shared:mps=no"
+#BSUB -o train_explore.out.%J
+#BSUB -e train_explore.err.%J
+#BSUB -J mlp_explore_neu128_lay1_actsigmoid_drop0.2_pruntrue
+
+set -x
+
+module load cuda/11.2
+export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:$LD_LIBRARY_PATH
+
+source $(conda info --base)/etc/profile.d/conda.sh
+conda activate /share/csc591s25/conda_env/new_env
+
+# 假設程式位於 /share/csc591s25/models/MLP/cache_replacement/policy_learning/cache_model/main.py
+cd /share/csc591s25/models/MLP
+
+python3 -m cache_replacement.policy_learning.cache_model.main   --experiment_base_dir="/share/csc591s25/tliu33/tmp"   --experiment_name="mlp_explore_neu128_lay1_actsigmoid_drop0.2_pruntrue"   --cache_configs="cache_replacement/policy_learning/cache/configs/default.json"   --model_bindings="lstm_hidden_size=128"   --model_bindings="num_layers=1"   --model_bindings="activation='sigmoid'"   --model_bindings="dropout=0.2"   --model_bindings="pruning=true"   --train_memtrace="cache_replacement/policy_learning/cache/traces/astar_313B_train.csv"   --valid_memtrace="cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv"
+
+------------------------------------------------------------
+
+Exited.
+
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <train_explore.err.860676> for stderr output of this job.
+
