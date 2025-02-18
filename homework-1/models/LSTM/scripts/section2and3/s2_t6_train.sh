@@ -1,19 +1,9 @@
-#!/bin/bash
-# This script demonstrates how to explore multiple hyperparameters for MLP training.
-# Example hyperparams: neurons, layers, activation, dropout, pruning, etc.
-#
-# Usage: ./train_task6_explore.sh
-#
-# NOTE:
-#   1) We have fixed the quoting issue for activation and other string parameters.
-#   2) If your code does not support pruning or dropout, please remove or comment them out.
-
 # Arrays for each hyperparam you want to explore
 NEURONS_ARR=(128)
 LAYERS_ARR=(1 2)
 ACT_ARR=("ReLU" "sigmoid")     # Activation functions
-DROPOUT_ARR=(0.0 0.2)          # If your code supports dropout
-PRUNING_ARR=("False" "True")   # If your code supports pruning
+DROPOUT_ARR=(0.0 0.2)          # If supports dropout
+PRUNING_ARR=("False" "True")   # If supports pruning
 
 for neurons in "${NEURONS_ARR[@]}"; do
   for layers in "${LAYERS_ARR[@]}"; do

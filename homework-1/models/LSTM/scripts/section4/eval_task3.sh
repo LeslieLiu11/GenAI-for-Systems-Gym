@@ -1,17 +1,13 @@
 #!/bin/bash
 #
 # eval_section4_task3_echo_single.sh
-#
-# 用於 Section IV, Task III 的「評估」：RNN_with_Attention 模型，
-# 單次只針對一個 attention_history_length (ah) 的已訓練模型 (checkpoint=30000.ckpt) 進行測試。
+
 #
 # 用法：
 #   chmod +x eval_section4_task3_echo_single.sh
 #   ./eval_section4_task3_echo_single.sh <ah> > jobAH.sh
 #   bsub < jobAH.sh
-#
-# 這樣就會只輸出一段 HPC job block（含 #BSUB）。你再手動提交給 HPC。
-# 完成後可在日誌檔查看最終 cache hit rate。
+
 
 if [ $# -lt 1 ]; then
   echo "Usage: $0 <attention_history_length> > jobAH.sh"
@@ -30,7 +26,7 @@ TRAIN_BASE_DIR="/share/csc591s25/tliu33/tmp"
 EVAL_BASE_DIR="/share/csc591s25/tliu33/tmp/eval_att_task3"
 LOGS_DIR="/share/csc591s25/models/RNN_with_Attention/logs_task3_eval"
 
-TRAIN_EXPERIMENT_NAME="section4iii_rnn_att_ah${ah}"
+TRAIN_EXPERIMENT_NAME="section4_rnn_att_ah${ah}"
 CHECKPOINT_PATH="${TRAIN_BASE_DIR}/${TRAIN_EXPERIMENT_NAME}/checkpoints/${CHECKPOINT_FILE}"
 MODEL_CONFIG_PATH="${TRAIN_BASE_DIR}/${TRAIN_EXPERIMENT_NAME}/model_config.json"
 EVAL_EXPERIMENT_NAME="eval_${TRAIN_EXPERIMENT_NAME}"
