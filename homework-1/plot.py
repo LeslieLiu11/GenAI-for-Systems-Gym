@@ -12,9 +12,9 @@ def plot_normalized_hit_rate(csv_file, output_png="normalized_hit_rate.png"):
     # 讀取 CSV
     df = pd.read_csv(csv_file)
 
-    max_rate = df['raw_hit_rate'].max()
+    max_rate = df['raw_hit_rate'].max() - 0.044
     
-    df['normalized_hit_rate'] = df['raw_hit_rate'] / max_rate
+    df['normalized_hit_rate'] = (df['raw_hit_rate'] - 0.044) / max_rate
  
     
     # 繪圖
