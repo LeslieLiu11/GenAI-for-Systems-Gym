@@ -31,7 +31,7 @@ fi
 layers=$5
 
 # 假設訓練時資料夾名稱為 mlp_depth_<layers>
-traindir="mlp_depth4_${layers}"
+traindir="mlp_width_128_d${layers}"
 
 if [ $# -eq 6 ]; then
     testcsv=$6
@@ -44,19 +44,21 @@ echo "#!/bin/bash"
 echo ""
 echo "#BSUB -n 1"
 echo "#BSUB -W 71:59"
-echo "#BSUB -o /share/csc591s25/tliu33/tmp/logs/out.${bm}.eval.%J"
-echo "#BSUB -e /share/csc591s25/tliu33/tmp/logs/err.${bm}.eval.%J"
+echo "#BSUB -o /share/csc591s25/tliu33/log_v2/out.${bm}.eval.%J"
+echo "#BSUB -e /share/csc591s25/tliu33/log_v2/err.${bm}.eval.%J"
 echo "#BSUB -J hw2_${bm}_${pol}_layers${layers}"
 echo ""
 echo "source ~/.bashrc"
 echo "conda activate /share/csc591s25/conda_env/new_env"
 
+echo "cd /share/csc591s25/tliu33/models/MLP"
+
 echo "python3 -m cache_replacement.policy_learning.cache.main \\"
-echo "  --experiment_base_dir=\"/share/csc591s25/tliu33/tmp/eval\" \\"
-echo "  --experiment_name=\"${bm}${len}_chkpt${layers}layers4\" \\"
+echo "  --experiment_base_dir=\"/share/csc591s25/tliu33/tmp_v2/eval\" \\"
+echo "  --experiment_name=\"${bm}${len}_chkpt${layers}layers_v2\" \\"
 echo "  --cache_configs=\"cache_replacement/policy_learning/cache/configs/default.json\" \\"
 echo "  --cache_configs=\"cache_replacement/policy_learning/cache/configs/eviction_policy/${pol}.json\" \\"
-echo "  --memtrace_file=\"/share/csc591s25/models/MLP/cache_replacement/policy_learning/cache/traces/${testcsv}.csv\" \\"
-echo "  --config_bindings=\"eviction_policy.scorer.checkpoint=\\\"/share/csc591s25/tliu33/tmp/${traindir}/checkpoints/${chkpt}000.ckpt\\\"\" \\"
-echo "  --config_bindings=\"eviction_policy.scorer.config_path=\\\"/share/csc591s25/tliu33/tmp/${traindir}/model_config.json\\\"\" \\"
+echo "  --memtrace_file=\"/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/${testcsv}.csv\" \\"
+echo "  --config_bindings=\"eviction_policy.scorer.checkpoint=\\\"/share/csc591s25/tliu33/tmp_v2/${traindir}/checkpoints/${chkpt}000.ckpt\\\"\" \\"
+echo "  --config_bindings=\"eviction_policy.scorer.config_path=\\\"/share/csc591s25/tliu33/tmp_v2/${traindir}/model_config.json\\\"\" \\"
 echo "  --warmup_period=0"
