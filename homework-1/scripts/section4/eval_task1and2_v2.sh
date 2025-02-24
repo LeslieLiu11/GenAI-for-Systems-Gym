@@ -41,14 +41,12 @@ EVAL_EXPERIMENT_NAME="eval_${TRAIN_EXPERIMENT_NAME}"
 TEST_FILE="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_test.csv"
 
 # HPC log 輸出路徑
-LOGS_DIR="/share/csc591s25/tliu33/log_v2t"
+LOGS_DIR="/share/csc591s25/tliu33/log_v2"
 
 # 以下用 echo 一行一行輸出 HPC 作業腳本內容
 echo "#!/bin/bash"
 echo "#BSUB -n 1"
 echo "#BSUB -W 48:00"
-echo "#BSUB -q gpu"
-echo "#BSUB -gpu \"num=1\""
 echo "#BSUB -o ${LOGS_DIR}/out_eval_seq${seq}.%J"
 echo "#BSUB -e ${LOGS_DIR}/err_eval_seq${seq}.%J"
 echo "#BSUB -J hw1_att_wo_${seq}"

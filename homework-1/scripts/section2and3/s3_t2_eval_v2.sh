@@ -51,6 +51,8 @@ echo ""
 echo "source ~/.bashrc"
 echo "conda activate /share/csc591s25/conda_env/new_env"
 
+
+
 echo "cd /share/csc591s25/tliu33/models/MLP"
 
 echo "python3 -m cache_replacement.policy_learning.cache.main \\"
