@@ -55,7 +55,7 @@ echo "conda activate /share/csc591s25/conda_env/new_env"
 
 echo "cd /share/csc591s25/tliu33/models/MLP"
 
-echo "python3 -m cache_replacement.policy_learning.cache.main \\"
+echo "python3 -m cache_replacement.policy_learning.cache.main3 \\"
 echo "  --experiment_base_dir=\"/share/csc591s25/tliu33/tmp_v2/eval\" \\"
 echo "  --experiment_name=\"${bm}${len}_chkpt${layers}layers_v2\" \\"
 echo "  --cache_configs=\"cache_replacement/policy_learning/cache/configs/default.json\" \\"
