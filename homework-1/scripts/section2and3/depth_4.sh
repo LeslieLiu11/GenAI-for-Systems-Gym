@@ -27,7 +27,7 @@ nvidia-smi
 cd "/share/csc591s25/tliu33/models/MLP"
 
 # 確認是 cache_model.main，而不是 cache_model1
-python3 -m cache_replacement.policy_learning.cache_model4.main \
+python3 -m cache_replacement.policy_learning.cache_model.main4 \
   --experiment_base_dir=/share/csc591s25/tliu33/tmp_v2 \
   --experiment_name=mlp_width_128_d4 \
   --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \

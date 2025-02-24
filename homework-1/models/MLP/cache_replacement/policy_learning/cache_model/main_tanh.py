@@ -48,7 +48,7 @@ from cache_replacement.policy_learning.cache import eviction_policy
 from cache_replacement.policy_learning.cache import memtrace
 from cache_replacement.policy_learning.cache_model import eviction_policy as model_eviction_policy
 from cache_replacement.policy_learning.cache_model import metric
-from cache_replacement.policy_learning.cache_model import model_leaky
+from cache_replacement.policy_learning.cache_model import model_tanh
 from cache_replacement.policy_learning.cache_model import utils
 from cache_replacement.policy_learning.common import config as cfg
 from cache_replacement.policy_learning.common import utils as common_utils
@@ -449,7 +449,7 @@ def main(_):
     device = torch.device("cuda:0")
   logging.info("Device: %s", device)
 
-  policy_model = model_leaky.EvictionPolicyModel.from_config(model_config).to(device)
+  policy_model = model_tanh.EvictionPolicyModel.from_config(model_config).to(device)
   optimizer = optim.Adam(policy_model.parameters(), lr=model_config.get("lr"))
 
   step = 0
