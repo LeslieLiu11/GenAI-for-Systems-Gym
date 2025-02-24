@@ -27,8 +27,8 @@ seq=$1
 CHECKPOINT_STEP=20000
 
 # HPC 上的 base dir (與 train 相同)
-EXPERIMENT_BASE_DIR="/share/csc591s25/tliu33/tmp"
-TRAIN_EXPERIMENT_NAME="section4i_rnn_att_seq${seq}"
+EXPERIMENT_BASE_DIR="/share/csc591s25/tliu33/tmp_v2"
+TRAIN_EXPERIMENT_NAME="section4_rnn_wo_att_seq${seq}"
 
 CHECKPOINT_FILE="${CHECKPOINT_STEP}.ckpt"
 CHECKPOINT_PATH="${EXPERIMENT_BASE_DIR}/${TRAIN_EXPERIMENT_NAME}/checkpoints/${CHECKPOINT_FILE}"
@@ -38,10 +38,10 @@ MODEL_CONFIG_PATH="${EXPERIMENT_BASE_DIR}/${TRAIN_EXPERIMENT_NAME}/model_config.
 EVAL_EXPERIMENT_NAME="eval_${TRAIN_EXPERIMENT_NAME}"
 
 # 測試檔案
-TEST_FILE="/share/csc591s25/traces/astar_313B_test.csv"
+TEST_FILE="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_test.csv"
 
 # HPC log 輸出路徑
-LOGS_DIR="/share/csc591s25/tliu33/tmp/logs_eval_att"
+LOGS_DIR="/share/csc591s25/tliu33/log_v2t"
 
 # 以下用 echo 一行一行輸出 HPC 作業腳本內容
 echo "#!/bin/bash"
@@ -51,13 +51,13 @@ echo "#BSUB -q gpu"
 echo "#BSUB -gpu \"num=1\""
 echo "#BSUB -o ${LOGS_DIR}/out_eval_seq${seq}.%J"
 echo "#BSUB -e ${LOGS_DIR}/err_eval_seq${seq}.%J"
-echo "#BSUB -J hw1_att_${seq}"
+echo "#BSUB -J hw1_att_wo_${seq}"
 echo ""
 echo "source ~/.bashrc"
 echo "conda activate /share/csc591s25/conda_env/new_env"
 
 # 切換到 RNN_without_Attention 目錄
-echo "cd /share/csc591s25/models/RNN_with_Attention/"
+echo "cd /share/csc591s25/tliu33/models/RNN_without_Attention/"
 
 # 執行 learned eviction policy 做測試
 echo "python3 -m cache_replacement.policy_learning.cache.main \\"
