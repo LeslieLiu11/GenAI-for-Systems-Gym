@@ -1,0 +1,63 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c008n01>
+Subject: Job 35612: <hw3_astar_learned_sigmoid> in cluster <Hazel> Done
+
+Job <hw3_astar_learned_sigmoid> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Mon Feb 24 10:32:10 2025
+Job was executed on host(s) <c008n01>, in queue <serial>, as user <tliu33> in cluster <Hazel> at Mon Feb 24 11:53:38 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/tliu33/tmp_v2> was used as the working directory.
+Started at Mon Feb 24 11:53:38 2025
+Terminated at Mon Feb 24 11:58:47 2025
+Results reported at Mon Feb 24 11:58:47 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -n 1
+#BSUB -W 71:59
+#BSUB -o /share/csc591s25/tliu33/log_v2/out.astar.eval.%J
+#BSUB -e /share/csc591s25/tliu33/log_v2/err.astar.eval.%J
+#BSUB -J hw3_astar_learned_sigmoid
+
+source ~/.bashrc
+conda activate /share/csc591s25/conda_env/new_env
+cd /share/csc591s25/tliu33/models/MLP
+python3 -m cache_replacement.policy_learning.cache.main \
+  --experiment_base_dir="/share/csc591s25/tliu33/tmp_v2/eval" \
+  --experiment_name="astar313B_chkptsigmoid" \
+  --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" \
+  --cache_configs="cache_replacement/policy_learning/cache/configs/eviction_policy/learned.json" \
+  --memtrace_file="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_test.csv" \
+  --config_bindings="eviction_policy.scorer.checkpoint=\"/share/csc591s25/tliu33/tmp_v2/mlp_width_128_sigmoid/checkpoints/20000.ckpt\"" \
+  --config_bindings="eviction_policy.scorer.config_path=\"/share/csc591s25/tliu33/tmp_v2/mlp_width_128_sigmoid/model_config.json\"" \
+  --warmup_period=0
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   200.67 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   309 sec.
+    Turnaround time :                            5197 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </share/csc591s25/tliu33/log_v2/err.astar.eval.35612> for stderr output of this job.
+

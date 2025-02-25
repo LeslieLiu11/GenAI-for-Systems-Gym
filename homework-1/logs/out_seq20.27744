@@ -1,0 +1,68 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu02>
+Subject: Job 27744: <#!/bin/bash;#BSUB -n 1;#BSUB -W 48:00;#BSUB -q gpu;#BSUB -gpu "num=1";#BSUB -o /share/csc591s25/tliu33/log_v2/out_seq20.%J;#BSUB -e /share/csc591s25/tliu33/log_v2/err_seq20.%J; module load cuda/11.2;source $(conda info --base)/etc/profile.d/conda.sh;conda activate /share/csc591s25/conda_env/new_env; cd /share/csc591s25/tliu33/models/RNN_without_Attention/;  python3 -m cache_replacement.policy_learning.cache_model.main \;  --experiment_base_dir=/share/csc591s25/tliu33/tmp_v2/ \;  --experiment_name=section4_rnn_wo_att_seq20 \;  --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \;  --model_bindings="loss=[\"ndcg\", \"reuse_dist\"]" \;  --model_bindings="address_embedder.max_vocab_size=5000" \;  --model_bindings="sequence_length=20" \;  --train_memtrace=/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_train.csv  \;  --valid_memtrace=/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv  \;  --total_steps=30000> in cluster <Hazel> Exited
+
+Job <#!/bin/bash;#BSUB -n 1;#BSUB -W 48:00;#BSUB -q gpu;#BSUB -gpu "num=1";#BSUB -o /share/csc591s25/tliu33/log_v2/out_seq20.%J;#BSUB -e /share/csc591s25/tliu33/log_v2/err_seq20.%J; module load cuda/11.2;source $(conda info --base)/etc/profile.d/conda.sh;conda activate /share/csc591s25/conda_env/new_env; cd /share/csc591s25/tliu33/models/RNN_without_Attention/;  python3 -m cache_replacement.policy_learning.cache_model.main \;  --experiment_base_dir=/share/csc591s25/tliu33/tmp_v2/ \;  --experiment_name=section4_rnn_wo_att_seq20 \;  --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \;  --model_bindings="loss=[\"ndcg\", \"reuse_dist\"]" \;  --model_bindings="address_embedder.max_vocab_size=5000" \;  --model_bindings="sequence_length=20" \;  --train_memtrace=/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_train.csv  \;  --valid_memtrace=/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv  \;  --total_steps=30000> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Mon Feb 24 00:22:58 2025
+Job was executed on host(s) <gpu02>, in queue <gpu>, as user <tliu33> in cluster <Hazel> at Mon Feb 24 00:23:05 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/tliu33/tmp/section2 and 3> was used as the working directory.
+Started at Mon Feb 24 00:23:05 2025
+Terminated at Mon Feb 24 00:23:09 2025
+Results reported at Mon Feb 24 00:23:09 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 48:00
+#BSUB -q gpu
+#BSUB -gpu "num=1"
+#BSUB -o /share/csc591s25/tliu33/log_v2/out_seq20.%J
+#BSUB -e /share/csc591s25/tliu33/log_v2/err_seq20.%J
+
+module load cuda/11.2
+source $(conda info --base)/etc/profile.d/conda.sh
+conda activate /share/csc591s25/conda_env/new_env
+
+cd /share/csc591s25/tliu33/models/RNN_without_Attention/
+
+
+python3 -m cache_replacement.policy_learning.cache_model.main \
+  --experiment_base_dir=/share/csc591s25/tliu33/tmp_v2/ \
+  --experiment_name=section4_rnn_wo_att_seq20 \
+  --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \
+  --model_bindings="loss=[\"ndcg\", \"reuse_dist\"]" \
+  --model_bindings="address_embedder.max_vocab_size=5000" \
+  --model_bindings="sequence_length=20" \
+  --train_memtrace=/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_train.csv  \
+  --valid_memtrace=/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv  \
+  --total_steps=30000
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.20 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                6
+    Run time :                                   32 sec.
+    Turnaround time :                            11 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </share/csc591s25/tliu33/log_v2/err_seq20.27744> for stderr output of this job.
+

@@ -1,0 +1,95 @@
++ module load cuda/11.2
++ _module_raw load cuda/11.2
+++ conda info --base
+/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/conda/base/context.py:202: FutureWarning: Adding 'defaults' to channel list implicitly is deprecated and will be removed in 25.3. 
+
+To remove this warning, please choose a default channel explicitly with conda's regular configuration system, e.g. by adding 'defaults' to the list of channels:
+
+  conda config --add channels defaults
+
+For more information see https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html
+
+  deprecated.topic(
++ source /share/csc591s25/conda_env/new_env/etc/profile.d/conda.sh
+++ export CONDA_EXE=/share/csc591s25/conda_env/new_env/bin/conda
+++ CONDA_EXE=/share/csc591s25/conda_env/new_env/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/share/csc591s25/conda_env/new_env/bin/python
+++ CONDA_PYTHON_EXE=/share/csc591s25/conda_env/new_env/bin/python
+++ '[' -z x ']'
++ conda activate /share/csc591s25/conda_env/new_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /share/csc591s25/conda_env/new_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate /share/csc591s25/conda_env/new_env
+++ '[' -n '' ']'
+++ /share/csc591s25/conda_env/new_env/bin/conda shell.posix activate /share/csc591s25/conda_env/new_env
++ ask_conda='. "/share/csc591s25/conda_env/new_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
+unset _CE_M
+unset _CE_CONDA
+PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\''
+export CONDA_EXE='\''/share/csc591s25/conda_env/new_env/bin/conda'\''
+export CONDA_PYTHON_EXE='\''/share/csc591s25/conda_env/new_env/bin/python'\''
+. "/share/csc591s25/conda_env/new_env/etc/conda/activate.d/libxml2_activate.sh"'
++ eval '. "/share/csc591s25/conda_env/new_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
+unset _CE_M
+unset _CE_CONDA
+PS1='\''(/share/csc591s25/conda_env/new_env) '\''
+export PATH='\''/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(/share/csc591s25/conda_env/new_env) '\''
+export CONDA_EXE='\''/share/csc591s25/conda_env/new_env/bin/conda'\''
+export CONDA_PYTHON_EXE='\''/share/csc591s25/conda_env/new_env/bin/python'\''
+. "/share/csc591s25/conda_env/new_env/etc/conda/activate.d/libxml2_activate.sh"'
+++ . /share/csc591s25/conda_env/new_env/etc/conda/deactivate.d/libxml2_deactivate.sh
++++ test -n ''
++++ unset XML_CATALOG_FILES
++++ unset xml_catalog_files_libxml2
+++ unset _CE_M
+++ unset _CE_CONDA
+++ PS1='(/share/csc591s25/conda_env/new_env) '
+++ export PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++ PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export 'CONDA_PROMPT_MODIFIER=(/share/csc591s25/conda_env/new_env) '
+++ CONDA_PROMPT_MODIFIER='(/share/csc591s25/conda_env/new_env) '
+++ export CONDA_EXE=/share/csc591s25/conda_env/new_env/bin/conda
+++ CONDA_EXE=/share/csc591s25/conda_env/new_env/bin/conda
+++ export CONDA_PYTHON_EXE=/share/csc591s25/conda_env/new_env/bin/python
+++ CONDA_PYTHON_EXE=/share/csc591s25/conda_env/new_env/bin/python
+++ . /share/csc591s25/conda_env/new_env/etc/conda/activate.d/libxml2_activate.sh
++++ test -n ''
++++ xml_catalog_files_libxml2=
++++ XML_CATALOG_FILES=
++++ conda_catalog_files=
++++ ifs_libxml2=' 	
+'
++++ IFS=' '
++++ rem=/share/csc591s25/conda_env/new_env
++++ for pre in ${rem}
++++ test '' = /share/csc591s25/conda_env/new_env
++++ conda_catalog_files=/share/csc591s25/conda_env/new_env
++++ rem=
++++ IFS=' 	
+'
++++ conda_catalog_files='file:///share/csc591s25/conda_env/new_env/etc/xml/catalog file:///etc/xml/catalog'
++++ export 'XML_CATALOG_FILES=file:///share/csc591s25/conda_env/new_env/etc/xml/catalog file:///etc/xml/catalog'
++++ XML_CATALOG_FILES='file:///share/csc591s25/conda_env/new_env/etc/xml/catalog file:///etc/xml/catalog'
++++ unset conda_catalog_files ifs_libxml2 rem
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /share/csc591s25/tliu33/models/RNN_without_Attention/
++ python3 -m cache_replacement.policy_learning.cache_model.main --experiment_base_dir=/share/csc591s25/tliu33/tmp_v2/ --experiment_name=section4_rnn_wo_att_seq20 --cache_configs=cache_replacement/policy_learning/cache/configs/default.json '--model_bindings=loss=["ndcg", "reuse_dist"]' --model_bindings=address_embedder.max_vocab_size=5000 --model_bindings=sequence_length=20 --train_memtrace=/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_train.csv --valid_memtrace=/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv --total_steps=30000
+/share/csc591s25/conda_env/new_env/bin/python3: No module named cache_replacement.policy_learning.cache_model.main

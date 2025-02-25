@@ -1,0 +1,92 @@
+++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash load cuda/11.2
++ eval 'LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib;' export 'LD_LIBRARY_PATH;' 'PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin;' export 'PATH;' 'CUDA_HOME=/usr/local/apps/cuda/cuda-11.2;' export 'CUDA_HOME;' '_LMFILES_=/usr/local/apps/modulefiles/cuda/11.2;' export '_LMFILES_;' 'LOADEDMODULES=cuda/11.2;' export 'LOADEDMODULES;' test '0;'
+++ LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+++ export LD_LIBRARY_PATH
+++ PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++ export PATH
+++ CUDA_HOME=/usr/local/apps/cuda/cuda-11.2
+++ export CUDA_HOME
+++ _LMFILES_=/usr/local/apps/modulefiles/cuda/11.2
+++ export _LMFILES_
+++ LOADEDMODULES=cuda/11.2
+++ export LOADEDMODULES
+++ test 0
++ _mlstatus=0
++ return 0
+hi
+hi
+hi
+hi
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu15>
+Subject: Job 28054: <#!/bin/bash;#BSUB -n 1;#BSUB -W 48:00;#BSUB -q gpu;#BSUB -gpu "num=1";#BSUB -o /share/csc591s25/tliu33/log_v2/out_seq120.%J;#BSUB -e /share/csc591s25/tliu33/log_v2/err_seq120.%J; # 啟用調試模式;set -x; # 載入環境;module load cuda/11.2;source $(conda info --base)/etc/profile.d/conda.sh;conda activate /share/csc591s25/conda_env/new_env; # 切換到程式碼目錄;cd "/share/csc591s25/tliu33/models/RNN_without_Attention/"; # 執行命令;python3 -m cache_replacement.policy_learning.cache_model.main \;  --experiment_base_dir="/share/csc591s25/tliu33/tmp_v2/" \;  --experiment_name="section4_rnn_wo_att_seq120" \;  --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" \;  --model_bindings="loss=[\"ndcg\", \"reuse_dist\"]" \;  --model_bindings="address_embedder.max_vocab_size=5000" \;  --model_bindings="sequence_length=120" \;  --train_memtrace="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_train.csv" \;  --valid_memtrace="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv" \;  --total_steps=30000> in cluster <Hazel> Done
+
+Job <#!/bin/bash;#BSUB -n 1;#BSUB -W 48:00;#BSUB -q gpu;#BSUB -gpu "num=1";#BSUB -o /share/csc591s25/tliu33/log_v2/out_seq120.%J;#BSUB -e /share/csc591s25/tliu33/log_v2/err_seq120.%J; # 啟用調試模式;set -x; # 載入環境;module load cuda/11.2;source $(conda info --base)/etc/profile.d/conda.sh;conda activate /share/csc591s25/conda_env/new_env; # 切換到程式碼目錄;cd "/share/csc591s25/tliu33/models/RNN_without_Attention/"; # 執行命令;python3 -m cache_replacement.policy_learning.cache_model.main \;  --experiment_base_dir="/share/csc591s25/tliu33/tmp_v2/" \;  --experiment_name="section4_rnn_wo_att_seq120" \;  --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" \;  --model_bindings="loss=[\"ndcg\", \"reuse_dist\"]" \;  --model_bindings="address_embedder.max_vocab_size=5000" \;  --model_bindings="sequence_length=120" \;  --train_memtrace="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_train.csv" \;  --valid_memtrace="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv" \;  --total_steps=30000> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Mon Feb 24 00:52:48 2025
+Job was executed on host(s) <gpu15>, in queue <gpu>, as user <tliu33> in cluster <Hazel> at Mon Feb 24 00:53:04 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/tliu33/tmp/section2 and 3> was used as the working directory.
+Started at Mon Feb 24 00:53:04 2025
+Terminated at Mon Feb 24 05:17:44 2025
+Results reported at Mon Feb 24 05:17:44 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 48:00
+#BSUB -q gpu
+#BSUB -gpu "num=1"
+#BSUB -o /share/csc591s25/tliu33/log_v2/out_seq120.%J
+#BSUB -e /share/csc591s25/tliu33/log_v2/err_seq120.%J
+
+# 啟用調試模式
+set -x
+
+# 載入環境
+module load cuda/11.2
+source $(conda info --base)/etc/profile.d/conda.sh
+conda activate /share/csc591s25/conda_env/new_env
+
+# 切換到程式碼目錄
+cd "/share/csc591s25/tliu33/models/RNN_without_Attention/"
+
+# 執行命令
+python3 -m cache_replacement.policy_learning.cache_model.main \
+  --experiment_base_dir="/share/csc591s25/tliu33/tmp_v2/" \
+  --experiment_name="section4_rnn_wo_att_seq120" \
+  --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" \
+  --model_bindings="loss=[\"ndcg\", \"reuse_dist\"]" \
+  --model_bindings="address_embedder.max_vocab_size=5000" \
+  --model_bindings="sequence_length=120" \
+  --train_memtrace="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_train.csv" \
+  --valid_memtrace="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv" \
+  --total_steps=30000
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   15771.26 sec.
+    Max Memory :                                 8 GB
+    Average Memory :                             6.85 GB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                10
+    Run time :                                   15889 sec.
+    Turnaround time :                            15896 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </share/csc591s25/tliu33/log_v2/err_seq120.28054> for stderr output of this job.
+

@@ -1,0 +1,55 @@
+2025-02-24 11:22:51.092498: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-24 11:22:51.563103: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1740414171.949724 1910543 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1740414172.064996 1910543 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-24 11:22:52.631963: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-24 11:23:59.246583: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+I0224 11:23:59.247307 22481666737152 utils.py:24] Experiment directory: /share/csc591s25/tliu33/tmp_v2/eval/astar313B_chkpt1layers_v2
+I0224 11:23:59.349127 22481666737152 main.py:107] Config: {
+    "associativity": 16,
+    "cache_line_size": 64,
+    "capacity": 2097152,
+    "eviction_policy": {
+        "policy_type": "greedy",
+        "scorer": {
+            "checkpoint": "/share/csc591s25/tliu33/tmp_v2/mlp_width_128_d1/checkpoints/20000.ckpt",
+            "config_path": "/share/csc591s25/tliu33/tmp_v2/mlp_width_128_d1/model_config.json",
+            "type": "learned"
+        }
+    }
+}
+I0224 11:23:59.349442 22481666737152 main.py:108] Flags: {
+    "memtrace_file": "/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_test.csv",
+    "tb_freq": 10000,
+    "warmup_period": 0
+}
+Initializing MemoryTrace:   0%|          | 0/10000000 [00:00<?, ?it/s]Initializing MemoryTrace:   0%|          | 30209/10000000 [00:00<00:33, 302067.96it/s]Initializing MemoryTrace:   1%|          | 86598/10000000 [00:00<00:21, 456058.65it/s]Initializing MemoryTrace:   2%|▏         | 163188/10000000 [00:00<00:16, 597518.73it/s]Initializing MemoryTrace:   5%|▍         | 464710/10000000 [00:00<00:06, 1551942.97it/s]Initializing MemoryTrace:   8%|▊         | 800774/10000000 [00:00<00:04, 2204121.32it/s]Initializing MemoryTrace:  12%|█▏        | 1154479/10000000 [00:00<00:03, 2657274.97it/s]Initializing MemoryTrace:  15%|█▌        | 1517082/10000000 [00:00<00:02, 2973938.80it/s]Initializing MemoryTrace:  19%|█▉        | 1893482/10000000 [00:00<00:02, 3225411.60it/s]Initializing MemoryTrace:  23%|██▎       | 2277468/10000000 [00:00<00:02, 3417452.57it/s]Initializing MemoryTrace:  27%|██▋       | 2663509/10000000 [00:01<00:02, 3554139.89it/s]Initializing MemoryTrace:  31%|███       | 3058654/10000000 [00:01<00:01, 3675691.81it/s]Initializing MemoryTrace:  35%|███▍      | 3455587/10000000 [00:01<00:01, 3764971.78it/s]Initializing MemoryTrace:  39%|███▊      | 3851134/10000000 [00:01<00:01, 3822638.42it/s]Initializing MemoryTrace:  42%|████▏     | 4242850/10000000 [00:01<00:01, 3850784.00it/s]Initializing MemoryTrace:  46%|████▋     | 4636528/10000000 [00:01<00:01, 3876668.37it/s]Initializing MemoryTrace:  50%|█████     | 5029308/10000000 [00:01<00:01, 3891992.01it/s]Initializing MemoryTrace:  54%|█████▍    | 5426125/10000000 [00:01<00:01, 3914839.47it/s]Initializing MemoryTrace:  58%|█████▊    | 5827913/10000000 [00:01<00:01, 3945756.31it/s]Initializing MemoryTrace:  62%|██████▏   | 6222489/10000000 [00:01<00:01, 3630669.22it/s]Initializing MemoryTrace:  66%|██████▌   | 6616426/10000000 [00:02<00:00, 3718002.58it/s]Initializing MemoryTrace:  70%|██████▉   | 6992215/10000000 [00:02<00:00, 3696955.89it/s]Initializing MemoryTrace:  74%|███████▍  | 7390213/10000000 [00:02<00:00, 3778881.31it/s]Initializing MemoryTrace:  78%|███████▊  | 7791632/10000000 [00:02<00:00, 3847709.09it/s]Initializing MemoryTrace:  82%|████████▏ | 8194462/10000000 [00:02<00:00, 3900906.56it/s]Initializing MemoryTrace:  86%|████████▌ | 8597426/10000000 [00:02<00:00, 3938813.86it/s]Initializing MemoryTrace:  90%|█████████ | 9002711/10000000 [00:02<00:00, 3972681.81it/s]Initializing MemoryTrace:  94%|█████████▍| 9406941/10000000 [00:02<00:00, 3993397.12it/s]Initializing MemoryTrace:  98%|█████████▊| 9808251/10000000 [00:02<00:00, 3999235.68it/s]Initializing MemoryTrace: 100%|██████████| 10000000/10000000 [00:02<00:00, 3471388.41it/s]
+/gpfs_common/share01/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache_model/eviction_policy.py:63: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  scoring_model.load_state_dict(torch.load(f, map_location=device))
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/main.py", line 158, in <module>
+    app.run(main)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/gpfs_common/share01/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/main.py", line 119, in main
+    cache = cache_mod.Cache.from_config(cache_config, trace=trace)
+  File "/gpfs_common/share01/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 194, in from_config
+    eviction_policy = eviction_policy_from_config(
+  File "/gpfs_common/share01/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 180, in eviction_policy_from_config
+    scorer = scorer_from_config(config.get("scorer"), trace)
+  File "/gpfs_common/share01/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 172, in scorer_from_config
+    return (model_eviction_policy_mod.LearnedScorer.
+  File "/gpfs_common/share01/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache_model/eviction_policy.py", line 63, in from_model_checkpoint
+    scoring_model.load_state_dict(torch.load(f, map_location=device))
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 2584, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for EvictionPolicyModel:
+	Missing key(s) in state_dict: "_mlp.2.weight", "_mlp.2.bias". 

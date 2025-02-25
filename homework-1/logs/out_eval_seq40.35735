@@ -1,0 +1,66 @@
+hi
+hi
+hi
+hi
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c007n01>
+Subject: Job 35735: <hw1_att_wo_40> in cluster <Hazel> Done
+
+Job <hw1_att_wo_40> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Mon Feb 24 10:44:06 2025
+Job was executed on host(s) <c007n01>, in queue <serial>, as user <tliu33> in cluster <Hazel> at Mon Feb 24 11:55:30 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/tliu33/tmp_v2> was used as the working directory.
+Started at Mon Feb 24 11:55:30 2025
+Terminated at Mon Feb 24 11:59:27 2025
+Results reported at Mon Feb 24 11:59:27 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 48:00
+#BSUB -o /share/csc591s25/tliu33/log_v2/out_eval_seq40.%J
+#BSUB -e /share/csc591s25/tliu33/log_v2/err_eval_seq40.%J
+#BSUB -J hw1_att_wo_40
+
+source ~/.bashrc
+conda activate /share/csc591s25/conda_env/new_env
+cd /share/csc591s25/tliu33/models/RNN_without_Attention/
+python3 -m cache_replacement.policy_learning.cache.main \
+  --experiment_base_dir="/share/csc591s25/tliu33/tmp_v2" \
+  --experiment_name="eval_section4_rnn_wo_att_seq40" \
+  --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" \
+  --cache_configs="cache_replacement/policy_learning/cache/configs/eviction_policy/learned.json" \
+  --memtrace_file="/share/csc591s25/tliu33/models/MLP/cache_replacement/policy_learning/cache/traces/astar_313B_test.csv" \
+  --config_bindings="eviction_policy.scorer.checkpoint=\"/share/csc591s25/tliu33/tmp_v2/section4_rnn_wo_att_seq40/checkpoints/20000.ckpt\"" \
+  --config_bindings="eviction_policy.scorer.config_path=\"/share/csc591s25/tliu33/tmp_v2/section4_rnn_wo_att_seq40/model_config.json\"" \
+  --warmup_period=0
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   188.08 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   262 sec.
+    Turnaround time :                            4521 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </share/csc591s25/tliu33/log_v2/err_eval_seq40.35735> for stderr output of this job.
+

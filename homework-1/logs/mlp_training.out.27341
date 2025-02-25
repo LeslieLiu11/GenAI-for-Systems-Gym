@@ -1,0 +1,191 @@
+++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash load PrgEnv-pgi
+Loading PrgEnv-pgi/18.4
+  Loading requirement: pgi/18.4 netcdf/4.5.0/openmpi-2.1.2/2018
+    openmpi/2.1.2/2018
++ eval 'NETCDF_PATH=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2;' export 'NETCDF_PATH;' 'NETCDFL=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib;' export 'NETCDFL;' 'LD_LIBRARY_PATH=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib;' export 'LD_LIBRARY_PATH;' 'MANPATH=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/18.4/man:/usr/share/man:/usr/local/lsf/10.1/man:;' export 'MANPATH;' 'NETCDF_DIR=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2;' export 'NETCDF_DIR;' 'PGI_OPTL_INCLUDE_DIRS=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/include:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include;' export 'PGI_OPTL_INCLUDE_DIRS;' '_LMFILES_=/usr/local/pgi/modulefiles/pgi/18.4:/usr/local/pgi/modulefiles/netcdf/4.5.0/openmpi-2.1.2/2018:/usr/local/pgi/modulefiles/openmpi/2.1.2/2018:/usr/local/pgi/modulefiles/PrgEnv-pgi/18.4;' export '_LMFILES_;' 'LOADEDMODULES=pgi/18.4:netcdf/4.5.0/openmpi-2.1.2/2018:openmpi/2.1.2/2018:PrgEnv-pgi/18.4;' export 'LOADEDMODULES;' 'LIBNETCDF=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib;' export 'LIBNETCDF;' '__MODULES_LMTAG=pgi/18.4\&auto-loaded:netcdf/4.5.0/openmpi-2.1.2/2018\&auto-loaded:openmpi/2.1.2/2018\&auto-loaded;' export '__MODULES_LMTAG;' 'CPP=/bin/cpp;' export 'CPP;' 'CXX=/usr/local/pgi/linux86-64/18.4/bin/pgc++;' export 'CXX;' 'NETCDF=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2;' export 'NETCDF;' 'NETCDF_INC=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include;' export 'NETCDF_INC;' 'PGI_OPTL_LIB_DIRS=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib;' export 'PGI_OPTL_LIB_DIRS;' '__MODULES_LMPREREQ=PrgEnv-pgi/18.4\&pgi/18.4\&netcdf/4.5.0\&openmpi/2.1.2;' export '__MODULES_LMPREREQ;' 'PGI_OPTL_LIBS=-lnetcdf_c++4\' '-lnetcdff\' '-lnetcdf\' '-lhdf5hl_fortran\' '-lhdf5_hl\' '-lhdf5_fortran\' '-lhdf5;' export 'PGI_OPTL_LIBS;' 'F90=/usr/local/pgi/linux86-64/18.4/bin/pgfortran;' export 'F90;' 'NETCDF_FLIB=-I/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include\' '-L/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib\' '-lnetcdff\' '-lnetcdf;' export 'NETCDF_FLIB;' 'PGI=/usr/local/pgi;' export 'PGI;' '__MODULES_LMALTNAME=netcdf/4.5.0/openmpi-2.1.2/2018\&as\|netcdf/default\&as\|netcdf/latest\&as\|netcdf/4.5.0/default\&as\|netcdf/4.5.0/latest\&as\|netcdf/4.5.0/openmpi-2.1.2/default\&as\|netcdf/4.5.0/openmpi-2.1.2/latest:openmpi/2.1.2/2018\&as\|openmpi/2.1.2/default\&as\|openmpi/2.1.2/latest:PrgEnv-pgi/18.4\&PrgEnv-pgi/default\&PrgEnv-pgi;' export '__MODULES_LMALTNAME;' '__MODULES_LMCONFLICT=pgi/18.4\&pgi:openmpi/2.1.2/2018\&openmpi\&mpich\&mvapich2:PrgEnv-pgi/18.4\&PrgEnv\&PrgEnv-pgi\&PrgEnv-gcc\&PrgEnv-intel;' export '__MODULES_LMCONFLICT;' 'FC=/usr/local/pgi/linux86-64/18.4/bin/pgfortran;' export 'FC;' '__MODULES_SHARE_MANPATH=:1;' export '__MODULES_SHARE_MANPATH;' 'NETCDF_LIB=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib;' export 'NETCDF_LIB;' 'F77=/usr/local/pgi/linux86-64/18.4/bin/pgfortran;' export 'F77;' 'NETCDF_CLIB=-I/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include\' '-L/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib\' '-lnetcdf_c++4\' '-lnetcdf;' export 'NETCDF_CLIB;' 'NETCDFI=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include;' export 'NETCDFI;' 'PATH=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin;' export 'PATH;' 'INCNETCDF=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include;' export 'INCNETCDF;' 'CC=/usr/local/pgi/linux86-64/18.4/bin/pgcc;' export 'CC;' 'NETCDF_ROOT=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2;' export 'NETCDF_ROOT;' test '0;'
+++ NETCDF_PATH=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2
+++ export NETCDF_PATH
+++ NETCDFL=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib
+++ export NETCDFL
+++ LD_LIBRARY_PATH=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+++ export LD_LIBRARY_PATH
+++ MANPATH=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/share/man:/usr/local/pgi/linux86-64/18.4/man:/usr/share/man:/usr/local/lsf/10.1/man:
+++ export MANPATH
+++ NETCDF_DIR=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2
+++ export NETCDF_DIR
+++ PGI_OPTL_INCLUDE_DIRS=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/include:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include
+++ export PGI_OPTL_INCLUDE_DIRS
+++ _LMFILES_=/usr/local/pgi/modulefiles/pgi/18.4:/usr/local/pgi/modulefiles/netcdf/4.5.0/openmpi-2.1.2/2018:/usr/local/pgi/modulefiles/openmpi/2.1.2/2018:/usr/local/pgi/modulefiles/PrgEnv-pgi/18.4
+++ export _LMFILES_
+++ LOADEDMODULES=pgi/18.4:netcdf/4.5.0/openmpi-2.1.2/2018:openmpi/2.1.2/2018:PrgEnv-pgi/18.4
+++ export LOADEDMODULES
+++ LIBNETCDF=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib
+++ export LIBNETCDF
+++ __MODULES_LMTAG='pgi/18.4&auto-loaded:netcdf/4.5.0/openmpi-2.1.2/2018&auto-loaded:openmpi/2.1.2/2018&auto-loaded'
+++ export __MODULES_LMTAG
+++ CPP=/bin/cpp
+++ export CPP
+++ CXX=/usr/local/pgi/linux86-64/18.4/bin/pgc++
+++ export CXX
+++ NETCDF=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2
+++ export NETCDF
+++ NETCDF_INC=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include
+++ export NETCDF_INC
+++ PGI_OPTL_LIB_DIRS=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib
+++ export PGI_OPTL_LIB_DIRS
+++ __MODULES_LMPREREQ='PrgEnv-pgi/18.4&pgi/18.4&netcdf/4.5.0&openmpi/2.1.2'
+++ export __MODULES_LMPREREQ
+++ PGI_OPTL_LIBS='-lnetcdf_c++4 -lnetcdff -lnetcdf -lhdf5hl_fortran -lhdf5_hl -lhdf5_fortran -lhdf5'
+++ export PGI_OPTL_LIBS
+++ F90=/usr/local/pgi/linux86-64/18.4/bin/pgfortran
+++ export F90
+++ NETCDF_FLIB='-I/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include -L/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib -lnetcdff -lnetcdf'
+++ export NETCDF_FLIB
+++ PGI=/usr/local/pgi
+++ export PGI
+++ __MODULES_LMALTNAME='netcdf/4.5.0/openmpi-2.1.2/2018&as|netcdf/default&as|netcdf/latest&as|netcdf/4.5.0/default&as|netcdf/4.5.0/latest&as|netcdf/4.5.0/openmpi-2.1.2/default&as|netcdf/4.5.0/openmpi-2.1.2/latest:openmpi/2.1.2/2018&as|openmpi/2.1.2/default&as|openmpi/2.1.2/latest:PrgEnv-pgi/18.4&PrgEnv-pgi/default&PrgEnv-pgi'
+++ export __MODULES_LMALTNAME
+++ __MODULES_LMCONFLICT='pgi/18.4&pgi:openmpi/2.1.2/2018&openmpi&mpich&mvapich2:PrgEnv-pgi/18.4&PrgEnv&PrgEnv-pgi&PrgEnv-gcc&PrgEnv-intel'
+++ export __MODULES_LMCONFLICT
+++ FC=/usr/local/pgi/linux86-64/18.4/bin/pgfortran
+++ export FC
+++ __MODULES_SHARE_MANPATH=:1
+++ export __MODULES_SHARE_MANPATH
+++ NETCDF_LIB=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib
+++ export NETCDF_LIB
+++ F77=/usr/local/pgi/linux86-64/18.4/bin/pgfortran
+++ export F77
+++ NETCDF_CLIB='-I/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include -L/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib -lnetcdf_c++4 -lnetcdf'
+++ export NETCDF_CLIB
+++ NETCDFI=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include
+++ export NETCDFI
+++ PATH=/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++ export PATH
+++ INCNETCDF=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/include
+++ export INCNETCDF
+++ CC=/usr/local/pgi/linux86-64/18.4/bin/pgcc
+++ export CC
+++ NETCDF_ROOT=/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2
+++ export NETCDF_ROOT
+++ test 0
++ _mlstatus=0
++ return 0
+++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash load cuda/11.2
++ eval 'LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib;' export 'LD_LIBRARY_PATH;' 'PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin;' export 'PATH;' 'CUDA_HOME=/usr/local/apps/cuda/cuda-11.2;' export 'CUDA_HOME;' '_LMFILES_=/usr/local/pgi/modulefiles/pgi/18.4:/usr/local/pgi/modulefiles/netcdf/4.5.0/openmpi-2.1.2/2018:/usr/local/pgi/modulefiles/openmpi/2.1.2/2018:/usr/local/pgi/modulefiles/PrgEnv-pgi/18.4:/usr/local/apps/modulefiles/cuda/11.2;' export '_LMFILES_;' 'LOADEDMODULES=pgi/18.4:netcdf/4.5.0/openmpi-2.1.2/2018:openmpi/2.1.2/2018:PrgEnv-pgi/18.4:cuda/11.2;' export 'LOADEDMODULES;' test '0;'
+++ LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64/stubs:/usr/local/apps/cuda/cuda-11.2/lib64:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/lib:/usr/local/pgi/linux86-64/18.4/lib:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+++ export LD_LIBRARY_PATH
+++ PATH=/usr/local/apps/cuda/cuda-11.2/bin:/usr/local/pgi/linux86-64/2018/mpi/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/2018/netcdf/netcdf-4.5.0/openmpi-2.1.2/bin:/usr/local/pgi/linux86-64/18.4/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/bin:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/etc:/share/csc591s25/conda_env/new_env/bin:/usr/local/apps/miniconda20240526/condabin:/home/tliu33/.local/bin:/home/tliu33/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/bin
+++ export PATH
+++ CUDA_HOME=/usr/local/apps/cuda/cuda-11.2
+++ export CUDA_HOME
+++ _LMFILES_=/usr/local/pgi/modulefiles/pgi/18.4:/usr/local/pgi/modulefiles/netcdf/4.5.0/openmpi-2.1.2/2018:/usr/local/pgi/modulefiles/openmpi/2.1.2/2018:/usr/local/pgi/modulefiles/PrgEnv-pgi/18.4:/usr/local/apps/modulefiles/cuda/11.2
+++ export _LMFILES_
+++ LOADEDMODULES=pgi/18.4:netcdf/4.5.0/openmpi-2.1.2/2018:openmpi/2.1.2/2018:PrgEnv-pgi/18.4:cuda/11.2
+++ export LOADEDMODULES
+++ test 0
++ _mlstatus=0
++ return 0
+Sun Feb 23 23:38:58 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.05              Driver Version: 560.35.05      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A10                     On  |   00000000:4B:00.0 Off |                    0 |
+|  0%   46C    P0             42W /  150W |       1MiB /  23028MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A10                     On  |   00000000:B1:00.0 Off |                    0 |
+|  0%   31C    P8             15W /  150W |       1MiB /  23028MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu11>
+Subject: Job 27341: <#!/bin/bash;#BSUB -n 1;#BSUB -W 12:00;#BSUB -q gpu;#BSUB -gpu "num=1:mode=shared:mps=no"; # 這裡請直接寫死路徑，或在 #BSUB 之前定義;# (LSF 不會幫你展開在 #BSUB 行中設定的變數);# 如果要自訂輸出路徑，就硬寫:;#BSUB -o /share/csc591s25/tliu33/log_v2/mlp_training.out.%J;#BSUB -e /share/csc591s25/tliu33/log_v2/mlp_training.err.%J; #----------------------------------------;set -x; module load PrgEnv-pgi;module load cuda/11.2;export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:$LD_LIBRARY_PATH; # 若你想用 .bashrc，就確保 conda init 正常;source ~/.bashrc;conda activate /share/csc591s25/conda_env/new_env; nvidia-smi; # 若目錄名稱有空白，請加引號，或改目錄名;cd "/share/csc591s25/tliu33/models/MLP"; # 確認是 cache_model.main，而不是 cache_model1;python3 -m cache_replacement.policy_learning.cache_model.main_sigmoid \;  --experiment_base_dir=/share/csc591s25/tliu33/tmp_v2 \;  --experiment_name=mlp_width_128_sigmoid \;  --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \;  --model_bindings="lstm_hidden_size=128" \;  --train_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_train.csv \;  --valid_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv> in cluster <Hazel> Exited
+
+Job <#!/bin/bash;#BSUB -n 1;#BSUB -W 12:00;#BSUB -q gpu;#BSUB -gpu "num=1:mode=shared:mps=no"; # 這裡請直接寫死路徑，或在 #BSUB 之前定義;# (LSF 不會幫你展開在 #BSUB 行中設定的變數);# 如果要自訂輸出路徑，就硬寫:;#BSUB -o /share/csc591s25/tliu33/log_v2/mlp_training.out.%J;#BSUB -e /share/csc591s25/tliu33/log_v2/mlp_training.err.%J; #----------------------------------------;set -x; module load PrgEnv-pgi;module load cuda/11.2;export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:$LD_LIBRARY_PATH; # 若你想用 .bashrc，就確保 conda init 正常;source ~/.bashrc;conda activate /share/csc591s25/conda_env/new_env; nvidia-smi; # 若目錄名稱有空白，請加引號，或改目錄名;cd "/share/csc591s25/tliu33/models/MLP"; # 確認是 cache_model.main，而不是 cache_model1;python3 -m cache_replacement.policy_learning.cache_model.main_sigmoid \;  --experiment_base_dir=/share/csc591s25/tliu33/tmp_v2 \;  --experiment_name=mlp_width_128_sigmoid \;  --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \;  --model_bindings="lstm_hidden_size=128" \;  --train_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_train.csv \;  --valid_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv> was submitted from host <login02> by user <tliu33> in cluster <Hazel> at Sun Feb 23 23:38:55 2025
+Job was executed on host(s) <gpu11>, in queue <gpu>, as user <tliu33> in cluster <Hazel> at Sun Feb 23 23:38:56 2025
+</home/tliu33> was used as the home directory.
+</share/csc591s25/tliu33/tmp/section2 and 3> was used as the working directory.
+Started at Sun Feb 23 23:38:56 2025
+Terminated at Mon Feb 24 11:39:06 2025
+Results reported at Mon Feb 24 11:39:06 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 12:00
+#BSUB -q gpu
+#BSUB -gpu "num=1:mode=shared:mps=no"
+
+# 這裡請直接寫死路徑，或在 #BSUB 之前定義
+# (LSF 不會幫你展開在 #BSUB 行中設定的變數)
+# 如果要自訂輸出路徑，就硬寫:
+#BSUB -o /share/csc591s25/tliu33/log_v2/mlp_training.out.%J
+#BSUB -e /share/csc591s25/tliu33/log_v2/mlp_training.err.%J
+
+#----------------------------------------
+set -x
+
+module load PrgEnv-pgi
+module load cuda/11.2
+export LD_LIBRARY_PATH=/usr/local/apps/cuda/cuda-11.2/lib64:$LD_LIBRARY_PATH
+
+# 若你想用 .bashrc，就確保 conda init 正常
+source ~/.bashrc
+conda activate /share/csc591s25/conda_env/new_env
+
+nvidia-smi
+
+# 若目錄名稱有空白，請加引號，或改目錄名
+cd "/share/csc591s25/tliu33/models/MLP"
+
+# 確認是 cache_model.main，而不是 cache_model1
+python3 -m cache_replacement.policy_learning.cache_model.main_sigmoid \
+  --experiment_base_dir=/share/csc591s25/tliu33/tmp_v2 \
+  --experiment_name=mlp_width_128_sigmoid \
+  --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \
+  --model_bindings="lstm_hidden_size=128" \
+  --train_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_train.csv \
+  --valid_memtrace=cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv
+
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   42980.00 sec.
+    Max Memory :                                 9 GB
+    Average Memory :                             8.14 GB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                10
+    Run time :                                   43211 sec.
+    Turnaround time :                            43211 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </share/csc591s25/tliu33/log_v2/mlp_training.err.27341> for stderr output of this job.
+
